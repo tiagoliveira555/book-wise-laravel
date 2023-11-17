@@ -13,6 +13,30 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="antialiased max-w-[1440px] min-h-screen mx-auto p-5 bg-base-gray-800 text-white">
-        <h1>Book Wise</h1>
+        <div class="w-full flex">
+            <div class="w-[598px] h-[912px] bg-bg-logo rounded-[10px] flex justify-center items-center">
+                <img src="images/logo.svg" alt="Logo">
+            </div>
+            <div class="flex flex-1 justify-center items-center">
+                <div class="w-[327px]">
+                    <h1 class="font-bold text-2xl text-base-gray-100">Boas vindas!</h1>
+                    <p class="text-base-gray-200">Faça seu login ou acesse como visitante.</p>
+                    <div class="mt-10 flex flex-col justify-center items-center w-full gap-4">
+                        <div class="bg-base-gray-600 w-full py-5 px-6 rounded-lg flex items-center gap-5">
+                            <img src="images/icons/google.svg" alt="Google">
+                            <span class="text-lg text-base-gray-200 font-bold">Entrar com Google</span>
+                        </div>
+                        <div class="bg-base-gray-600 w-full py-5 px-6 rounded-lg flex items-center gap-5">
+                            <img src="images/icons/github.svg" alt="Github">
+                            <span class="text-lg text-base-gray-200 font-bold">Entrar com GitHub</span>
+                        </div>
+                        <div class="bg-base-gray-600 w-full py-5 px-6 rounded-lg flex items-center gap-5">
+                            <img src="images/icons/rocket.svg" alt="Rocket">
+                            <span class="text-lg text-base-gray-200 font-bold">Acessar como visitante</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
