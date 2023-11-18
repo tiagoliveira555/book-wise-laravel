@@ -36,6 +36,10 @@ export default {
                 'gradient-horizontal': "linear-gradient(90deg, #7FD1CC 0%, #9694F5 100%)",
                 'bg-logo': "url(http://book-wise.test/images/logo-section-bg.png)",
                 'sidebar-bg': "url(http://book-wise.test/images/sidebar-bg.png)"
+            },
+            fontSize: {
+                'icon': '24px',
+                'icon-min': '20px'
             }
         },
     },
