@@ -39,7 +39,6 @@ export default {
             },
             fontSize: {
                 'icon': '24px',
-                'icon-min': '20px'
             }
         },
     },

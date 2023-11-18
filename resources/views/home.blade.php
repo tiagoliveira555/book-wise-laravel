@@ -22,7 +22,7 @@
                         <div class="flex items-center">
                             <div class="w-1 h-6 bg-gradient-vertical rounded-full"></div>
                             <div class="py-2 ml-4 flex items-center gap-3 text-base-gray-100">
-                                <i class="text-2xl ph ph-chart-line-up"></i>
+                                <i class="text-icon ph ph-chart-line-up"></i>
                                 <span class="font-bold">Início</span>
                             </div>
                         </div>
@@ -47,12 +47,19 @@
                         </div>
                         <span class="text-sm text-base-gray-200 truncate max-w-[90px]">Tiago Oliveira da Conceição</span>
                         <button class="p-1 rounded gap-3 flex justify-center items-center">
-                            <i class="text-icon-min text-rose-500 ph ph-sign-in"></i>
+                            <i class="text-xl text-rose-500 ph ph-sign-in"></i>
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="bg-yellow-950 w-[608px] ml-24 mr-16">menu</div>
+            <div class="w-[608px] ml-24 mr-16 mt-[52px]">
+                <header>
+                    <div class="w-36 flex items-center gap-3">
+                        <i class="text-3xl text-base-green-100 ph ph-chart-line-up"></i>
+                        <h2 class="text-base-gray-100 text-2xl font-bold">Início</h2>
+                    </div>
+                </header>
+            </div>
             <div class="bg-blue-950 w-[324px]">right</div>
         </div>
     </body>
