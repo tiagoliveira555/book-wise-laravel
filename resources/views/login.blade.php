@@ -14,8 +14,8 @@
     </head>
     <body class="antialiased max-w-[1440px] min-h-screen mx-auto p-5 bg-base-gray-800 text-white">
         <div class="w-full flex">
-            <div class="w-[598px] h-[912px] bg-bg-logo rounded-[10px] flex justify-center items-center">
-                <img src="images/logo.svg" alt="Logo">
+            <div class="w-[598px] h-[912px] bg-bg-logo rounded-[10px] opacity-[0.85] flex justify-center items-center">
+                <img class="opacity-90" src="images/logo.svg" alt="Logo">
             </div>
             <div class="flex flex-1 justify-center items-center">
                 <div class="w-[327px]">
