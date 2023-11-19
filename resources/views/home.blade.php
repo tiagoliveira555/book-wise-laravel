@@ -59,6 +59,37 @@
                         <h2 class="text-base-gray-100 text-2xl font-bold">Início</h2>
                     </div>
                 </header>
+                <section>
+                    <div class="mt-10 flex justify-between items-center">
+                        <span class="text-base-gray-100 text-sm">Sua última leitura</span>
+                        <a href="#" class="flex items-center gap-2 py-1 px-2 rounded text-base-purple-100">
+                            <span class="font-bold">Ver todas</span>
+                            <i class="text-lg ph ph-caret-right"></i>
+                        </a>
+                    </div>
+                    <div class="mt-5 py-5 px-6 rounded-lg flex items-center gap-6 bg-base-gray-600">
+                        <img
+                            class="w-[108px] h-[152px]"
+                            src="images/books/entendendo-algoritmos.png"
+                            alt="Entendendo Algoritmos"
+                        >
+                        <div class="w-full">
+                            <div class="flex justify-between items-center">
+                                <span class="text-base-gray-300 text-sm">Há 2 dias</span>
+                                <ul class="flex justify-center items-center gap-1 text-base-purple-100">
+                                    <li><i class="ph-fill ph-star"></i></li>
+                                    <li><i class="ph-fill ph-star"></i></li>
+                                    <li><i class="ph-fill ph-star"></i></li>
+                                    <li><i class="ph-fill ph-star"></i></li>
+                                    <li><i class="ph ph-star"></i></li>
+                                </ul>
+                            </div>
+                            <h2 class="mt-3 font-bold text-base-gray-100">Entendendo Algoritmos</h2>
+                            <h3 class="text-base-gray-400 text-sm">Aditya Bhargava</h3>
+                            <p class="mt-6 text-sm text-base-gray-300">Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectu...</p>
+                        </div>
+                    </div>
+                </section>
             </div>
             <div class="bg-blue-950 w-[324px]">right</div>
         </div>
