@@ -42,7 +42,7 @@
                         </div>
                     </div>
                     <div class="flex items-center justify-center gap-3 mb-6">
-                        <div class="bg-green-700 h-8 w-8 flex justify-center items-center border border-green-500 rounded-full">
+                        <div class="bg-gradient-vertical h-8 w-8 flex justify-center items-center border rounded-full">
 
                         </div>
                         <span class="text-sm text-base-gray-200 truncate max-w-[90px]">Tiago Oliveira da Conceição</span>
@@ -52,16 +52,16 @@
                     </div>
                 </div>
             </div>
-            <div class="w-[608px] ml-24 mr-16 mt-[52px]">
+            <div class="w-[608px] h-[912px] ml-24 mr-16 mt-[52px] overflow-auto scrollbar-hide">
                 <header>
                     <div class="w-36 flex items-center gap-3">
                         <i class="text-3xl text-base-green-100 ph ph-chart-line-up"></i>
                         <h2 class="text-base-gray-100 text-2xl font-bold">Início</h2>
                     </div>
                 </header>
-                <section>
-                    <div class="mt-10 flex justify-between items-center">
-                        <span class="text-base-gray-100 text-sm">Sua última leitura</span>
+                <section class="mt-10">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-base-gray-100 text-sm">Sua última leitura</h3>
                         <a href="#" class="flex items-center gap-2 py-1 px-2 rounded text-base-purple-100">
                             <span class="font-bold">Ver todas</span>
                             <i class="text-lg ph ph-caret-right"></i>
@@ -87,6 +87,44 @@
                             <h2 class="mt-3 font-bold text-base-gray-100">Entendendo Algoritmos</h2>
                             <h3 class="text-base-gray-400 text-sm">Aditya Bhargava</h3>
                             <p class="mt-6 text-sm text-base-gray-300">Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectu...</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="mt-10">
+                    <h3 class="text-sm text-base-gray-100 mb-1">Avaliações mais recentes</h3>
+                    <div class="mt-3 bg-base-gray-700 rounded-lg p-6">
+                        <div class="flex justify-between items-start">
+                            <div class="flex gap-4">
+                                <div
+                                    class="bg-gradient-vertical h-10 w-10 flex justify-center items-center border rounded-full"
+                                >
+                                </div>
+                                <div>
+                                    <h3 class="text-base-gray-100">Jaxson Dias</h3>
+                                    <h4 class="text-sm text-base-gray-400">Hoje</h4>
+                                </div>
+                            </div>
+                            <ul class="flex justify-center items-center gap-1 text-base-purple-100">
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph ph-star"></i></li>
+                            </ul>
+                        </div>
+                        <div class="mt-8 flex gap-5">
+                            <img
+                                class="w-[108px] h-[152px]"
+                                src="images/books/o-hobbit.png"
+                                alt="O Hobbit"
+                            >
+                            <div>
+                                <h2 class="font-bold text-base-gray-100">O Hobbit</h2>
+                                <h3 class="text-sm text-base-gray-400">J.R.R. Tolkien</h3>
+                                <p class="mt-5 text-base-gray-300 text-sm leading-[22px]">Semper et sapien proin vitae nisi. Feugiat neque integer donec et aenean posuere amet ultrices. Cras fermentum id pulvinar varius leo a in. Amet libero pharetra nunc elementum fringilla velit ipsum. Sed vulputate massa velit nibh...
+                                    <span class="text-base-purple-100 font-bold">ver mais</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </section>
