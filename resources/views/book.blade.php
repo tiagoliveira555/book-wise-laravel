@@ -423,14 +423,16 @@
         </div>
 
         {{-- Blur --}}
-        <div class="fixed inset-0 w-full h-full opacity-60 blur-sm bg-black"></div>
+        <div class="fixed inset-0 w-full h-full opacity-60 blur-sm bg-black">
+
+        </div>
         <div class="fixed top-0 right-0 w-[660px] z-10 h-full bg-base-gray-800">
             <header class="flex justify-end items-center w-full">
                 <button class="mt-6 mr-12 flex justify-center items-center text-base-gray-400">
                     <i class="text-xl ph ph-x"></i>
                 </button>
             </header>
-            <div class="flex flex-col mt-5">
+            <main class="flex flex-col mt-5">
                 <div class="w-[564px] mx-auto bg-base-gray-700 rounded-[10px] py-6 px-8 flex flex-col">
                     <div class="flex gap-8">
                         <img
@@ -439,7 +441,7 @@
                         alt="14 Hábitos de Desenvolvedores Alta..."
                     >
                     <div class="flex flex-col justify-between items-start">
-                        <div>
+                        <div class="flex flex-col gap-2">
                             <h2 class="font-bold text-base-gray-100 text-lg">14 Hábitos de Desenvolvedores Altamente Produtivos</h2>
                             <h3 class="text-base-gray-300">Zeno Rocha</h3>
                         </div>
@@ -470,6 +472,41 @@
                                 <h2 class="font-bold text-base-gray-200">160</h2>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </main>
+            <div class="mx-12 mt-[46px] mb-4 flex justify-between items-center">
+                <h2 class="text-base-gray-200 text-sm">Avaliações</h2>
+                <button class="py-1 px-2 text-bold text-base-purple-100">Avaliar</button>
+            </div>
+            <div class="flex flex-col gap-3 px-12">
+                <div class="flex flex-col rounded-lg p-6 bg-base-gray-700">
+                    <header class="flex justify-between w-full">
+                        <div class="flex items-center gap-4 flex-1">
+                            <div class="bg-gradient-vertical h-8 w-8 flex justify-center items-center border rounded-full">
+
+                            </div>
+                            <span class="font-bold text-base-gray-100">Cristofer Rosser</span>
+                        </div>
+                        <ul class="flex justify-center items-center gap-1 text-base-purple-100">
+                            <li class="text-[28px]"><i class="ph ph-star"></i></li>
+                            <li class="text-[28px]"><i class="ph ph-star"></i></li>
+                            <li class="text-[28px]"><i class="ph ph-star"></i></li>
+                            <li class="text-[28px]"><i class="ph ph-star"></i></li>
+                            <li class="text-[28px]"><i class="ph ph-star"></i></li>
+                        </ul>
+                    </header>
+                    <div class="relative mt-6 mb-3 h-[164px] rounded border bg-base-gray-800 text-sm border-base-gray-500 text-base-gray-400 focus-within:border-base-green-200">
+                        <textarea class="resize-none bg-transparent w-full h-full placeholder:text-sm placeholder:text-base-gray-400 border-none outline-none focus:ring-0" name="a" placeholder="Escreva sua avaliação"></textarea>
+                        <span class="absolute bottom-1 right-1 text-xs text-base-gray-400">0/450</span>
+                    </div>
+                    <div class="flex justify-end items-center gap-2">
+                        <button class="flex justify-center items-center p-2 rounded bg-base-gray-600 text-base-purple-100 text-2xl hover:bg-base-gray-500 transition-all">
+                            <i class="ph ph-x"></i>
+                        </button>
+                        <button class="flex justify-center items-center p-2 rounded bg-base-gray-600 text-base-green-100 text-2xl hover:bg-base-gray-500 transition-all">
+                            <i class="ph ph-check"></i>
+                        </button>
                     </div>
                 </div>
             </div>
