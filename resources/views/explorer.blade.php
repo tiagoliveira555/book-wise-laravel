@@ -54,7 +54,7 @@
                 </div>
             </aside>
             {{-- Aside End --}}
-            <div class="w-[996px] h-[988px] rounded ml-24 mr-[76px] overflow-auto scrollbar-hide">
+            <div class="w-[996px] h-[988px] rounded ml-24 mr-[76px]">
                 <header class="mt-[52px] flex justify-between items-center">
                     <div class="w-36 flex items-center gap-3">
                         <i class="text-3xl text-base-green-100 ph ph-binoculars"></i>
@@ -77,6 +77,348 @@
                         <li class="py-1 px-4 rounded-full text-center text-base-purple-100 border border-base-purple-100 hover:border-base-purple-100 transition-all">Suspense</li>
                     </ul>
                 </div>
+                <main class="grid grid-cols-3 gap-5 mt-12 overflow-auto scrollbar-hide h-[750px] rounded">
+                    <div class="flex rounded-lg py-4 px-5 gap-5 bg-base-gray-700 border-2 border-transparent hover:border-base-gray-600 transition-all">
+                        <img
+                            class="w-[108px] h-[152px]"
+                            src="images/books/a-revolucao-dos-bixos.png"
+                            alt="A revolução dos bixos"
+                        >
+                        <div class="flex flex-col justify-between items-start">
+                            <div>
+                                <h2 class="font-bold text-base-gray-100">A revolução dos bichos</h2>
+                                <h3 class="text-sm text-base-gray-400">George Orwell</h3>
+                            </div>
+                            <ul class="flex justify-center items-center gap-1 text-base-purple-100">
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph ph-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex rounded-lg py-4 px-5 gap-5 bg-base-gray-700 border-2 border-transparent hover:border-base-gray-600 transition-all">
+                        <img
+                            class="w-[108px] h-[152px]"
+                            src="images/books/a-revolucao-dos-bixos.png"
+                            alt="A revolução dos bixos"
+                        >
+                        <div class="flex flex-col justify-between items-start">
+                            <div>
+                                <h2 class="font-bold text-base-gray-100">A revolução dos bichos</h2>
+                                <h3 class="text-sm text-base-gray-400">George Orwell</h3>
+                            </div>
+                            <ul class="flex justify-center items-center gap-1 text-base-purple-100">
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph ph-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex rounded-lg py-4 px-5 gap-5 bg-base-gray-700 border-2 border-transparent hover:border-base-gray-600 transition-all">
+                        <img
+                            class="w-[108px] h-[152px]"
+                            src="images/books/a-revolucao-dos-bixos.png"
+                            alt="A revolução dos bixos"
+                        >
+                        <div class="flex flex-col justify-between items-start">
+                            <div>
+                                <h2 class="font-bold text-base-gray-100">A revolução dos bichos</h2>
+                                <h3 class="text-sm text-base-gray-400">George Orwell</h3>
+                            </div>
+                            <ul class="flex justify-center items-center gap-1 text-base-purple-100">
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph ph-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex rounded-lg py-4 px-5 gap-5 bg-base-gray-700 border-2 border-transparent hover:border-base-gray-600 transition-all">
+                        <img
+                            class="w-[108px] h-[152px]"
+                            src="images/books/a-revolucao-dos-bixos.png"
+                            alt="A revolução dos bixos"
+                        >
+                        <div class="flex flex-col justify-between items-start">
+                            <div>
+                                <h2 class="font-bold text-base-gray-100">A revolução dos bichos</h2>
+                                <h3 class="text-sm text-base-gray-400">George Orwell</h3>
+                            </div>
+                            <ul class="flex justify-center items-center gap-1 text-base-purple-100">
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph ph-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex rounded-lg py-4 px-5 gap-5 bg-base-gray-700 border-2 border-transparent hover:border-base-gray-600 transition-all">
+                        <img
+                            class="w-[108px] h-[152px]"
+                            src="images/books/a-revolucao-dos-bixos.png"
+                            alt="A revolução dos bixos"
+                        >
+                        <div class="flex flex-col justify-between items-start">
+                            <div>
+                                <h2 class="font-bold text-base-gray-100">A revolução dos bichos</h2>
+                                <h3 class="text-sm text-base-gray-400">George Orwell</h3>
+                            </div>
+                            <ul class="flex justify-center items-center gap-1 text-base-purple-100">
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph ph-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex rounded-lg py-4 px-5 gap-5 bg-base-gray-700 border-2 border-transparent hover:border-base-gray-600 transition-all">
+                        <img
+                            class="w-[108px] h-[152px]"
+                            src="images/books/a-revolucao-dos-bixos.png"
+                            alt="A revolução dos bixos"
+                        >
+                        <div class="flex flex-col justify-between items-start">
+                            <div>
+                                <h2 class="font-bold text-base-gray-100">A revolução dos bichos</h2>
+                                <h3 class="text-sm text-base-gray-400">George Orwell</h3>
+                            </div>
+                            <ul class="flex justify-center items-center gap-1 text-base-purple-100">
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph ph-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex rounded-lg py-4 px-5 gap-5 bg-base-gray-700 border-2 border-transparent hover:border-base-gray-600 transition-all">
+                        <img
+                            class="w-[108px] h-[152px]"
+                            src="images/books/a-revolucao-dos-bixos.png"
+                            alt="A revolução dos bixos"
+                        >
+                        <div class="flex flex-col justify-between items-start">
+                            <div>
+                                <h2 class="font-bold text-base-gray-100">A revolução dos bichos</h2>
+                                <h3 class="text-sm text-base-gray-400">George Orwell</h3>
+                            </div>
+                            <ul class="flex justify-center items-center gap-1 text-base-purple-100">
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph ph-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex rounded-lg py-4 px-5 gap-5 bg-base-gray-700 border-2 border-transparent hover:border-base-gray-600 transition-all">
+                        <img
+                            class="w-[108px] h-[152px]"
+                            src="images/books/a-revolucao-dos-bixos.png"
+                            alt="A revolução dos bixos"
+                        >
+                        <div class="flex flex-col justify-between items-start">
+                            <div>
+                                <h2 class="font-bold text-base-gray-100">A revolução dos bichos</h2>
+                                <h3 class="text-sm text-base-gray-400">George Orwell</h3>
+                            </div>
+                            <ul class="flex justify-center items-center gap-1 text-base-purple-100">
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph ph-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex rounded-lg py-4 px-5 gap-5 bg-base-gray-700 border-2 border-transparent hover:border-base-gray-600 transition-all">
+                        <img
+                            class="w-[108px] h-[152px]"
+                            src="images/books/a-revolucao-dos-bixos.png"
+                            alt="A revolução dos bixos"
+                        >
+                        <div class="flex flex-col justify-between items-start">
+                            <div>
+                                <h2 class="font-bold text-base-gray-100">A revolução dos bichos</h2>
+                                <h3 class="text-sm text-base-gray-400">George Orwell</h3>
+                            </div>
+                            <ul class="flex justify-center items-center gap-1 text-base-purple-100">
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph ph-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex rounded-lg py-4 px-5 gap-5 bg-base-gray-700 border-2 border-transparent hover:border-base-gray-600 transition-all">
+                        <img
+                            class="w-[108px] h-[152px]"
+                            src="images/books/a-revolucao-dos-bixos.png"
+                            alt="A revolução dos bixos"
+                        >
+                        <div class="flex flex-col justify-between items-start">
+                            <div>
+                                <h2 class="font-bold text-base-gray-100">A revolução dos bichos</h2>
+                                <h3 class="text-sm text-base-gray-400">George Orwell</h3>
+                            </div>
+                            <ul class="flex justify-center items-center gap-1 text-base-purple-100">
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph ph-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex rounded-lg py-4 px-5 gap-5 bg-base-gray-700 border-2 border-transparent hover:border-base-gray-600 transition-all">
+                        <img
+                            class="w-[108px] h-[152px]"
+                            src="images/books/a-revolucao-dos-bixos.png"
+                            alt="A revolução dos bixos"
+                        >
+                        <div class="flex flex-col justify-between items-start">
+                            <div>
+                                <h2 class="font-bold text-base-gray-100">A revolução dos bichos</h2>
+                                <h3 class="text-sm text-base-gray-400">George Orwell</h3>
+                            </div>
+                            <ul class="flex justify-center items-center gap-1 text-base-purple-100">
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph ph-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex rounded-lg py-4 px-5 gap-5 bg-base-gray-700 border-2 border-transparent hover:border-base-gray-600 transition-all">
+                        <img
+                            class="w-[108px] h-[152px]"
+                            src="images/books/a-revolucao-dos-bixos.png"
+                            alt="A revolução dos bixos"
+                        >
+                        <div class="flex flex-col justify-between items-start">
+                            <div>
+                                <h2 class="font-bold text-base-gray-100">A revolução dos bichos</h2>
+                                <h3 class="text-sm text-base-gray-400">George Orwell</h3>
+                            </div>
+                            <ul class="flex justify-center items-center gap-1 text-base-purple-100">
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph ph-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex rounded-lg py-4 px-5 gap-5 bg-base-gray-700 border-2 border-transparent hover:border-base-gray-600 transition-all">
+                        <img
+                            class="w-[108px] h-[152px]"
+                            src="images/books/a-revolucao-dos-bixos.png"
+                            alt="A revolução dos bixos"
+                        >
+                        <div class="flex flex-col justify-between items-start">
+                            <div>
+                                <h2 class="font-bold text-base-gray-100">A revolução dos bichos</h2>
+                                <h3 class="text-sm text-base-gray-400">George Orwell</h3>
+                            </div>
+                            <ul class="flex justify-center items-center gap-1 text-base-purple-100">
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph ph-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex rounded-lg py-4 px-5 gap-5 bg-base-gray-700 border-2 border-transparent hover:border-base-gray-600 transition-all">
+                        <img
+                            class="w-[108px] h-[152px]"
+                            src="images/books/a-revolucao-dos-bixos.png"
+                            alt="A revolução dos bixos"
+                        >
+                        <div class="flex flex-col justify-between items-start">
+                            <div>
+                                <h2 class="font-bold text-base-gray-100">A revolução dos bichos</h2>
+                                <h3 class="text-sm text-base-gray-400">George Orwell</h3>
+                            </div>
+                            <ul class="flex justify-center items-center gap-1 text-base-purple-100">
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph ph-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex rounded-lg py-4 px-5 gap-5 bg-base-gray-700 border-2 border-transparent hover:border-base-gray-600 transition-all">
+                        <img
+                            class="w-[108px] h-[152px]"
+                            src="images/books/a-revolucao-dos-bixos.png"
+                            alt="A revolução dos bixos"
+                        >
+                        <div class="flex flex-col justify-between items-start">
+                            <div>
+                                <h2 class="font-bold text-base-gray-100">A revolução dos bichos</h2>
+                                <h3 class="text-sm text-base-gray-400">George Orwell</h3>
+                            </div>
+                            <ul class="flex justify-center items-center gap-1 text-base-purple-100">
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph ph-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex rounded-lg py-4 px-5 gap-5 bg-base-gray-700 border-2 border-transparent hover:border-base-gray-600 transition-all">
+                        <img
+                            class="w-[108px] h-[152px]"
+                            src="images/books/a-revolucao-dos-bixos.png"
+                            alt="A revolução dos bixos"
+                        >
+                        <div class="flex flex-col justify-between items-start">
+                            <div>
+                                <h2 class="font-bold text-base-gray-100">A revolução dos bichos</h2>
+                                <h3 class="text-sm text-base-gray-400">George Orwell</h3>
+                            </div>
+                            <ul class="flex justify-center items-center gap-1 text-base-purple-100">
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph ph-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex rounded-lg py-4 px-5 gap-5 bg-base-gray-700 border-2 border-transparent hover:border-base-gray-600 transition-all">
+                        <img
+                            class="w-[108px] h-[152px]"
+                            src="images/books/a-revolucao-dos-bixos.png"
+                            alt="A revolução dos bixos"
+                        >
+                        <div class="flex flex-col justify-between items-start">
+                            <div>
+                                <h2 class="font-bold text-base-gray-100">A revolução dos bichos</h2>
+                                <h3 class="text-sm text-base-gray-400">George Orwell</h3>
+                            </div>
+                            <ul class="flex justify-center items-center gap-1 text-base-purple-100">
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph-fill ph-star"></i></li>
+                                <li><i class="ph ph-star"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </main>
             </div>
         </div>
     </body>
