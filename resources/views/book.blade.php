@@ -426,7 +426,7 @@
         <div class="fixed inset-0 w-full h-full opacity-60 blur-sm bg-black">
 
         </div>
-        <div class="fixed top-0 right-0 w-[660px] z-10 h-full bg-base-gray-800">
+        <div class="fixed top-0 pb-10 right-0 w-[660px] z-10 h-full bg-base-gray-800 overflow-auto">
             <header class="flex justify-end items-center w-full">
                 <button class="mt-6 mr-12 flex justify-center items-center text-base-gray-400">
                     <i class="text-xl ph ph-x"></i>
@@ -483,7 +483,7 @@
                 <div class="flex flex-col rounded-lg p-6 bg-base-gray-700">
                     <header class="flex justify-between w-full">
                         <div class="flex items-center gap-4 flex-1">
-                            <div class="bg-gradient-vertical h-8 w-8 flex justify-center items-center border rounded-full">
+                            <div class="bg-gradient-vertical h-10 w-10 flex justify-center items-center border rounded-full">
 
                             </div>
                             <span class="font-bold text-base-gray-100">Cristofer Rosser</span>
@@ -508,6 +508,48 @@
                             <i class="ph ph-check"></i>
                         </button>
                     </div>
+                </div>
+                <div class="flex flex-col gap-5 p-6 rounded-lg bg-base-gray-700">
+                    <div class="flex justify-between items-start gap-4">
+                        <div class="flex gap-4">
+                            <div class="bg-gradient-vertical h-10 w-10 flex justify-center items-center border rounded-full">
+
+                            </div>
+                            <div>
+                                <h2 class="text-base-gray-100 font-bold">Brandon Botosh</h2>
+                                <h3 class="text-sm text-base-gray-400">Há 2 dias</h3>
+                            </div>
+                        </div>
+                        <ul class="flex justify-center items-center gap-1 text-base-purple-100">
+                            <li><i class="ph-fill ph-star"></i></li>
+                            <li><i class="ph-fill ph-star"></i></li>
+                            <li><i class="ph-fill ph-star"></i></li>
+                            <li><i class="ph-fill ph-star"></i></li>
+                            <li><i class="ph ph-star"></i></li>
+                        </ul>
+                    </div>
+                    <p class="text-base-gray-300 text-sm">Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectus leo. Sit porta eget nec vitae sit vulputate eget</p>
+                </div>
+                <div class="flex flex-col gap-5 p-6 rounded-lg bg-base-gray-700">
+                    <div class="flex justify-between items-start gap-4">
+                        <div class="flex gap-4">
+                            <div class="bg-gradient-vertical h-10 w-10 flex justify-center items-center border rounded-full">
+
+                            </div>
+                            <div>
+                                <h2 class="text-base-gray-100 font-bold">Brandon Botosh</h2>
+                                <h3 class="text-sm text-base-gray-400">Há 2 dias</h3>
+                            </div>
+                        </div>
+                        <ul class="flex justify-center items-center gap-1 text-base-purple-100">
+                            <li><i class="ph-fill ph-star"></i></li>
+                            <li><i class="ph-fill ph-star"></i></li>
+                            <li><i class="ph-fill ph-star"></i></li>
+                            <li><i class="ph-fill ph-star"></i></li>
+                            <li><i class="ph ph-star"></i></li>
+                        </ul>
+                    </div>
+                    <p class="text-base-gray-300 text-sm">Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectus leo. Sit porta eget nec vitae sit vulputate eget</p>
                 </div>
             </div>
         </div>
