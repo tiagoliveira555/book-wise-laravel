@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'book');
+Route::view('/', 'home');
+Route::view('/explorer', 'explorer');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
