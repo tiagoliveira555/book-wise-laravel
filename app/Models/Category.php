@@ -10,7 +10,9 @@ class Category extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name'];
+    protected $fillable = ['id', 'name'];
+
+    public $incrementing = false;
 
     public function books(): BelongsToMany
     {

@@ -11,7 +11,9 @@ class Book extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'author', 'summary', 'cover_url', 'total_pages'];
+    protected $fillable = ['id', 'name', 'author', 'summary', 'cover_url', 'total_pages'];
+
+    public $incrementing = false;
 
     public function categories(): BelongsToMany
     {
@@ -20,6 +22,6 @@ class Book extends Model
 
     public function ratings(): HasMany
     {
-        return $this->hasMany(Rating::class, 'book_id');
+        return $this->hasMany(Rating::class);
     }
 }

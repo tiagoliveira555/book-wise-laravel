@@ -16,6 +16,7 @@ class User extends Authenticatable
     use Notifiable;
 
     protected $fillable = [
+        'id',
         'name',
         'email',
         'avatar_url',
@@ -31,6 +32,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public $incrementing = false;
 
     public function ratings(): HasMany
     {
