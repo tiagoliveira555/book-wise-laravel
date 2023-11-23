@@ -13,7 +13,7 @@
         <script src="https://unpkg.com/@phosphor-icons/web"></script>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="antialiased max-w-[1440px] min-h-screen mx-auto p-5 bg-base-gray-800 text-white overflow-auto scrollbar-hide">
-        {{ $slot }}
+    <body class="antialiased max-w-[1440px] min-h-screen mx-auto p-5 flex bg-base-gray-800 text-white overflow-auto scrollbar-hide">
+        <livewire:aside />
     </body>
 </html>
