@@ -7,9 +7,9 @@
             <h1 class="font-bold text-2xl text-base-gray-100">Boas vindas!</h1>
             <p class="text-base-gray-200">Faça seu login ou acesse como visitante.</p>
             <div class="mt-10 flex flex-col justify-center items-center w-full gap-4">
-                <x-button-login image="google" text="Entrar com Google" />
-                <x-button-login image="github" text="Entrar com GitHub" />
-                <x-button-login image="rocket" text="Acessar como visitante" />
+                <x-button-login href="{{ route('auth.social', [ 'driver' => 'google' ]) }}" image="google" text="Entrar com Google" />
+                <x-button-login href="{{ route('auth.social', [ 'driver' => 'github' ]) }}" image="github" text="Entrar com GitHub" />
+                <x-button-login href="{{ route('home') }}" wire:navigate image="rocket" text="Acessar como visitante" />
             </div>
         </div>
     </div>

@@ -54,6 +54,7 @@
                 </div>
             </aside>
             {{-- Aside End --}}
+
             <div class="w-[996px] h-[988px] rounded ml-24 mr-[76px]">
                 <header class="mt-[52px] flex justify-between items-center">
                     <div class="w-36 flex items-center gap-3">
