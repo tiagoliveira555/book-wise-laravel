@@ -1,4 +1,4 @@
-<div class="w-[996px] h-[988px] rounded ml-24 mr-[76px]">
+<div class="w-[996px] h-[930px] rounded ml-24 mr-[76px]">
     <header class="mt-[52px] flex justify-between items-center">
         <div class="w-36 flex items-center gap-3">
             <i class="text-3xl text-base-green-100 ph ph-binoculars"></i>
@@ -21,7 +21,7 @@
             <li class="py-1 px-4 rounded-full text-center text-base-purple-100 border border-base-purple-100 hover:border-base-purple-100 transition-all">Suspense</li>
         </ul>
     </div>
-    <main class="grid grid-cols-3 gap-5 mt-12 overflow-auto scrollbar-hide h-[750px] rounded">
+    <main class="grid grid-cols-3 gap-5 mt-12 pb-10 overflow-auto scrollbar-hide h-[728px] rounded">
         <div class="flex rounded-lg py-4 px-5 gap-5 bg-base-gray-700 border-2 border-transparent hover:border-base-gray-600 transition-all">
             <img
                 class="w-[108px] h-[152px]"

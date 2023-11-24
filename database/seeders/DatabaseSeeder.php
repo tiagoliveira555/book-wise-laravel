@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
     {
         User::factory()->createMany([
             [
-                'id' => '48e458c0-8b1e-4994-b85a-1e1cfcc9dd60',
+                'id' => 'eb0e8d1d-958c-4b6f-8143-e04edb79005c',
                 'name' => 'Jaxson Dias',
                 'email' => 'jaxson@gmail.com',
                 'password' => Hash::make(Random::generate(8)),
@@ -64,7 +64,7 @@ class DatabaseSeeder extends Seeder
                 'id' => 'c8176d86-896a-4c21-9219-6bb28cccaa5f',
                 'name' => '14 Hábitos de Desenvolvedores Altamente Produtivos',
                 'author' => 'Zeno Rocha',
-                'summary' => 'Nec tempor nunc in egestas...',
+                'summary' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectus leo. Sit porta eget nec vitae sit vulputate eget',
                 'cover_url' => 'images/books/14-habitos-de-desenvolvedores-altamente-produtivos.png',
                 'total_pages' => 160,
             ]
@@ -76,7 +76,7 @@ class DatabaseSeeder extends Seeder
             'id' => '375948a7-bca3-4b59-9f97-bfcde036b4ca',
             'name' => 'O Hobbit',
             'author' => 'J.R.R. Tolkien',
-            'summary' => 'Semper et sapien proin vitae nisi...',
+            'summary' => 'Semper et sapien proin vitae nisi. Feugiat neque integer donec et aenean posuere amet ultrices. Cras fermentum id pulvinar varius leo a in. Amet libero pharetra nunc elementum fringilla velit ipsum. Sed vulputate massa velit nibh',
             'cover_url' => 'images/books/o-hobbit.png',
             'total_pages' => 360,
         ]);
@@ -87,7 +87,7 @@ class DatabaseSeeder extends Seeder
             'id' => '86596503-369b-4614-bacf-11c9bb73e779',
             'name' => 'O guia do mochileiro das galáxias',
             'author' => 'Douglas Adams',
-            'summary' => 'Nec tempor nunc in egestas...',
+            'summary' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectus leo. Sit porta eget nec vitae sit vulputate eget',
             'cover_url' => 'images/books/o-guia-do-mochileiro-das-galaxias.png',
             'total_pages' => 250,
         ]);
@@ -98,7 +98,7 @@ class DatabaseSeeder extends Seeder
             'id' => 'd0d70b05-d48f-4d83-b1e8-0b4dd984c97d',
             'name' => 'A revolução dos bichos',
             'author' => 'George Orwell',
-            'summary' => 'Nec tempor nunc in egestas...',
+            'summary' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectus leo. Sit porta eget nec vitae sit vulputate eget',
             'cover_url' => 'images/books/a-revolucao-dos-bixos.png',
             'total_pages' => 350,
         ]);
@@ -109,7 +109,7 @@ class DatabaseSeeder extends Seeder
             'id' => '48b86ac2-014e-401d-bcbb-331ce5f4a457',
             'name' => 'O fim da eternidade',
             'author' => 'Isaac Asimov',
-            'summary' => 'Nec tempor nunc in egestas...',
+            'summary' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectus leo. Sit porta eget nec vitae sit vulputate eget',
             'cover_url' => 'images/books/o-fim-da-eternidade.png',
             'total_pages' => 165,
         ]);
@@ -120,7 +120,7 @@ class DatabaseSeeder extends Seeder
             'id' => 'e688c24f-d14d-4607-a12e-90e6e367398d',
             'name' => 'Entendendo Algoritmos',
             'author' => 'Aditya Y. Bhargava',
-            'summary' => 'Nec tempor nunc in egestas...',
+            'summary' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectus leo. Sit porta eget nec vitae sit vulputate eget',
             'cover_url' => 'images/books/entendendo-algoritmos.png',
             'total_pages' => 165,
         ]);
@@ -131,7 +131,7 @@ class DatabaseSeeder extends Seeder
             'id' => '0440ad7d-230e-4573-b455-84ca38b5d339',
             'name' => 'Código Limpo',
             'author' => 'Robert C. Martin',
-            'summary' => 'Nec tempor nunc in egestas...',
+            'summary' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectus leo. Sit porta eget nec vitae sit vulputate eget',
             'cover_url' => 'images/books/codigo-limpo.png',
             'total_pages' => 365,
         ]);
@@ -142,7 +142,7 @@ class DatabaseSeeder extends Seeder
             'id' => '14f410df-b28a-4e72-b1b4-363e26e160dd',
             'name' => 'O poder do hábito',
             'author' => 'Charles Duhigg',
-            'summary' => 'Nec tempor nunc in egestas...',
+            'summary' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectus leo. Sit porta eget nec vitae sit vulputate eget',
             'cover_url' => 'images/books/o-poder-do-habito.png',
             'total_pages' => 288,
         ]);
@@ -153,7 +153,7 @@ class DatabaseSeeder extends Seeder
             'id' => 'd2870ad0-3312-4ac2-af9f-76af6565587d',
             'name' => 'Arquitetura limpa',
             'author' => 'Robert C. Martin',
-            'summary' => 'Nec tempor nunc in egestas...',
+            'summary' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectus leo. Sit porta eget nec vitae sit vulputate eget',
             'cover_url' => 'images/books/arquitetura-limpa.png',
             'total_pages' => 288,
         ]);
@@ -164,7 +164,7 @@ class DatabaseSeeder extends Seeder
             'id' => '4fd2b389-b211-40b5-9797-f78cbb985645',
             'name' => 'Histórias extraordinárias',
             'author' => 'Edgar Allan Poe',
-            'summary' => 'Nec tempor nunc in egestas...',
+            'summary' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectus leo. Sit porta eget nec vitae sit vulputate eget',
             'cover_url' => 'images/books/historias-extraordinarias.png',
             'total_pages' => 332,
         ]);
@@ -175,7 +175,7 @@ class DatabaseSeeder extends Seeder
             'id' => '6de9f6b8-5ff4-4e06-b9f4-843eca462803',
             'name' => 'Refatoração',
             'author' => 'Martin Fowler',
-            'summary' => 'Nec tempor nunc in egestas...',
+            'summary' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectus leo. Sit porta eget nec vitae sit vulputate eget',
             'cover_url' => 'images/books/refatoracao.png',
             'total_pages' => 332,
         ]);
@@ -186,7 +186,7 @@ class DatabaseSeeder extends Seeder
             'id' => 'd0590f9a-dd89-42fd-9bbb-bf26c2e4dcf9',
             'name' => 'Domain-Driven Design',
             'author' => 'Eric Evans',
-            'summary' => 'Nec tempor nunc in egestas...',
+            'summary' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectus leo. Sit porta eget nec vitae sit vulputate eget',
             'cover_url' => 'images/books/domain-driven-design.png',
             'total_pages' => 288,
         ]);
@@ -197,7 +197,7 @@ class DatabaseSeeder extends Seeder
             'id' => '1d5cdbdc-b90f-40d5-8fe9-d4923ae12dbd',
             'name' => 'Viagem ao Centro da Terra',
             'author' => 'Julio Verne',
-            'summary' => 'Nec tempor nunc in egestas...',
+            'summary' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectus leo. Sit porta eget nec vitae sit vulputate eget',
             'cover_url' => 'images/books/viagem-ao-centro-da-terra.png',
             'total_pages' => 288,
         ]);
@@ -208,7 +208,7 @@ class DatabaseSeeder extends Seeder
             'id' => '404e47f8-da53-44fd-ab53-37ed171c3a9f',
             'name' => 'Fragmentos do Horror',
             'author' => 'Junji Ito',
-            'summary' => 'Nec tempor nunc in egestas...',
+            'summary' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectus leo. Sit porta eget nec vitae sit vulputate eget',
             'cover_url' => 'images/books/fragmentos-do-horror.png',
             'total_pages' => 144,
         ]);
@@ -219,7 +219,7 @@ class DatabaseSeeder extends Seeder
             'id' => '66cb0f47-7e20-4492-b640-9c020fcae6f2',
             'name' => 'O Programador Pragmático',
             'author' => 'Andrew Hunt',
-            'summary' => 'Nec tempor nunc in egestas...',
+            'summary' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectus leo. Sit porta eget nec vitae sit vulputate eget',
             'cover_url' => 'images/books/o-programador-pragmatico.png',
             'total_pages' => 205,
         ]);
@@ -230,9 +230,9 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => Uuid::uuid4()->toString(),
                 'rate' => 4,
-                'description' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectus leo. Sit porta eget nec vitae sit vulputate eget',
+                'description' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis.',
                 'book_id' => '375948a7-bca3-4b59-9f97-bfcde036b4ca',
-                'user_id' => '48e458c0-8b1e-4994-b85a-1e1cfcc9dd60',
+                'user_id' => 'eb0e8d1d-958c-4b6f-8143-e04edb79005c',
             ],
             [
                 'id' => Uuid::uuid4()->toString(),
@@ -244,7 +244,7 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => Uuid::uuid4()->toString(),
                 'rate' => 5,
-                'description' => 'Semper et sapien proin vitae nisi. Feugiat neque integer donec et aenean posuere amet ultrices. Cras fermentum id pulvinar varius leo a in. Amet libero pharetra nunc elementum fringilla velit ipsum. Sed vulputate massa velit nibh',
+                'description' => 'Semper et sapien proin vitae nisi. Feugiat neque integer donec et aenean posuere amet ultrices.',
                 'book_id' => 'e688c24f-d14d-4607-a12e-90e6e367398d',
                 'user_id' => '4383f783-6ce1-4f92-b1dd-7a7a693c4aef',
             ],
@@ -258,16 +258,16 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => Uuid::uuid4()->toString(),
                 'rate' => 5,
-                'description' => 'Semper et sapien proin vitae nisi. Feugiat neque integer donec et aenean posuere amet ultrices. Cras fermentum id pulvinar varius leo a in. Amet libero pharetra nunc elementum fringilla velit ipsum. Sed vulputate massa velit nibh',
+                'description' => 'Semper et sapien proin vitae nisi. Feugiat neque integer donec et aenean posuere amet ultrices.',
                 'book_id' => 'e688c24f-d14d-4607-a12e-90e6e367398d',
                 'user_id' => '4383f783-6ce1-4f92-b1dd-7a7a693c4aef',
             ],
             [
                 'id' => Uuid::uuid4()->toString(),
                 'rate' => 4,
-                'description' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectus leo. Sit porta eget nec vitae sit vulputate eget',
+                'description' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis.',
                 'book_id' => '48b86ac2-014e-401d-bcbb-331ce5f4a457',
-                'user_id' => '48e458c0-8b1e-4994-b85a-1e1cfcc9dd60',
+                'user_id' => 'eb0e8d1d-958c-4b6f-8143-e04edb79005c',
             ],
             [
                 'id' => Uuid::uuid4()->toString(),
@@ -279,16 +279,16 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => Uuid::uuid4()->toString(),
                 'rate' => 5,
-                'description' => 'Semper et sapien proin vitae nisi. Feugiat neque integer donec et aenean posuere amet ultrices. Cras fermentum id pulvinar varius leo a in. Amet libero pharetra nunc elementum fringilla velit ipsum. Sed vulputate massa velit nibh',
+                'description' => 'Semper et sapien proin vitae nisi. Feugiat neque integer donec et aenean posuere amet ultrices.',
                 'book_id' => '375948a7-bca3-4b59-9f97-bfcde036b4ca',
                 'user_id' => '4383f783-6ce1-4f92-b1dd-7a7a693c4aef',
             ],
             [
                 'id' => Uuid::uuid4()->toString(),
                 'rate' => 4,
-                'description' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectus leo. Sit porta eget nec vitae sit vulputate eget',
+                'description' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis.',
                 'book_id' => 'c8176d86-896a-4c21-9219-6bb28cccaa5f',
-                'user_id' => '48e458c0-8b1e-4994-b85a-1e1cfcc9dd60',
+                'user_id' => 'eb0e8d1d-958c-4b6f-8143-e04edb79005c',
             ],
             [
                 'id' => Uuid::uuid4()->toString(),
@@ -300,16 +300,16 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => Uuid::uuid4()->toString(),
                 'rate' => 5,
-                'description' => 'Semper et sapien proin vitae nisi. Feugiat neque integer donec et aenean posuere amet ultrices. Cras fermentum id pulvinar varius leo a in. Amet libero pharetra nunc elementum fringilla velit ipsum. Sed vulputate massa velit nibh',
+                'description' => 'Semper et sapien proin vitae nisi. Feugiat neque integer donec et aenean posuere amet ultrices.',
                 'book_id' => '14f410df-b28a-4e72-b1b4-363e26e160dd',
                 'user_id' => '4383f783-6ce1-4f92-b1dd-7a7a693c4aef',
             ],
             [
                 'id' => Uuid::uuid4()->toString(),
                 'rate' => 4,
-                'description' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectus leo. Sit porta eget nec vitae sit vulputate eget',
+                'description' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis.',
                 'book_id' => 'd2870ad0-3312-4ac2-af9f-76af6565587d',
-                'user_id' => '48e458c0-8b1e-4994-b85a-1e1cfcc9dd60',
+                'user_id' => 'eb0e8d1d-958c-4b6f-8143-e04edb79005c',
             ],
             [
                 'id' => Uuid::uuid4()->toString(),
@@ -321,16 +321,16 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => Uuid::uuid4()->toString(),
                 'rate' => 5,
-                'description' => 'Semper et sapien proin vitae nisi. Feugiat neque integer donec et aenean posuere amet ultrices. Cras fermentum id pulvinar varius leo a in. Amet libero pharetra nunc elementum fringilla velit ipsum. Sed vulputate massa velit nibh',
+                'description' => 'Semper et sapien proin vitae nisi. Feugiat neque integer donec et aenean posuere amet ultrices.',
                 'book_id' => '6de9f6b8-5ff4-4e06-b9f4-843eca462803',
                 'user_id' => '4383f783-6ce1-4f92-b1dd-7a7a693c4aef',
             ],
             [
                 'id' => Uuid::uuid4()->toString(),
                 'rate' => 4,
-                'description' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectus leo. Sit porta eget nec vitae sit vulputate eget',
+                'description' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis.',
                 'book_id' => 'd0590f9a-dd89-42fd-9bbb-bf26c2e4dcf9',
-                'user_id' => '48e458c0-8b1e-4994-b85a-1e1cfcc9dd60',
+                'user_id' => 'eb0e8d1d-958c-4b6f-8143-e04edb79005c',
             ],
             [
                 'id' => Uuid::uuid4()->toString(),
@@ -342,16 +342,16 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => Uuid::uuid4()->toString(),
                 'rate' => 5,
-                'description' => 'Semper et sapien proin vitae nisi. Feugiat neque integer donec et aenean posuere amet ultrices. Cras fermentum id pulvinar varius leo a in. Amet libero pharetra nunc elementum fringilla velit ipsum. Sed vulputate massa velit nibh',
+                'description' => 'Semper et sapien proin vitae nisi. Feugiat neque integer donec et aenean posuere amet ultrices.',
                 'book_id' => '404e47f8-da53-44fd-ab53-37ed171c3a9f',
                 'user_id' => '4383f783-6ce1-4f92-b1dd-7a7a693c4aef',
             ],
             [
                 'id' => Uuid::uuid4()->toString(),
                 'rate' => 4,
-                'description' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectus leo. Sit porta eget nec vitae sit vulputate eget',
+                'description' => 'Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis.',
                 'book_id' => '66cb0f47-7e20-4492-b640-9c020fcae6f2',
-                'user_id' => '48e458c0-8b1e-4994-b85a-1e1cfcc9dd60',
+                'user_id' => 'eb0e8d1d-958c-4b6f-8143-e04edb79005c',
             ],
         ]);
     }
