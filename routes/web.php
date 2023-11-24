@@ -31,8 +31,10 @@ Route::get('/auth/{driver}/callback', function ($driver) {
 });
 
 Route::get('/', Home::class)->name('home');
+Route::get('/explorer', Home::class)->name('explorer');
+Route::get('/perfil', Home::class)->name('perfil');
 Route::get('/login', Login::class)->name('login');
 
-Route::view('/explorer', 'explorer');
+// Route::view('/explorer', 'explorer');
 
 require __DIR__.'/auth.php';
