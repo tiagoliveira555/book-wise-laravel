@@ -3,11 +3,9 @@
     <div class="flex flex-col justify-between h-full">
         <div class="flex flex-col gap-4 ml-12 mt-16">
 
-
-            <x-link-aside id="/" icon="chart-line-up" text="Início" :page="$page" />
-            <x-link-aside id="explorer" icon="binoculars" text="Explorar" :page="$page" />
-            <x-link-aside id="perfil" icon="user" text="Perfil" :page="$page" />
-
+            <x-link-aside id="/" icon="chart-line-up" text="Início" />
+            <x-link-aside id="explorer" icon="binoculars" text="Explorar" />
+            <x-link-aside id="perfil" icon="user" text="Perfil" />
 
         </div>
         <div class="flex items-center justify-center gap-3 mb-6">
