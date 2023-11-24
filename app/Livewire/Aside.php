@@ -24,4 +24,11 @@ class Aside extends Component
             return '/';
         }
     }
+
+    public function logout()
+    {
+        auth()->logout();
+
+        return $this->redirect($this->page, navigate: true);
+    }
 }

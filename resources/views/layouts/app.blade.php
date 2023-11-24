@@ -15,7 +15,7 @@
         <title>Book Wise</title>
 
     </head>
-    <body class="antialiased max-w-[1440px] min-h-screen mx-auto p-5 flex bg-base-gray-800 text-white overflow-auto scrollbar-hide">
+    <body class="antialiased max-w-[1440px] min-h-screen mx-auto p-5 bg-base-gray-800 text-white overflow-auto scrollbar-hide">
         <livewire:aside />
     </body>
 </html>
