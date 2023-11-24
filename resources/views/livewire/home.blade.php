@@ -1,11 +1,12 @@
 <div class="flex">
-    <div class="w-[608px] h-[988px] rounded ml-24 mr-16 overflow-auto scrollbar-hide">
+    <div class="w-[608px] h-[930px] p-[-20px] rounded ml-24 mr-16 overflow-auto scrollbar-hide">
         <header class="mt-[52px]">
             <div class="w-36 flex items-center gap-3">
                 <i class="text-3xl text-base-green-100 ph ph-chart-line-up"></i>
                 <h2 class="text-base-gray-100 text-2xl font-bold">Início</h2>
             </div>
         </header>
+        @if (auth()->check())
         <section class="mt-10">
             <div class="flex justify-between items-center">
                 <h3 class="text-base-gray-100 text-sm">Sua última leitura</h3>
@@ -37,6 +38,7 @@
                 </div>
             </div>
         </section>
+        @endif
         <section class="mt-10">
             <h3 class="text-sm text-base-gray-100 mb-1">Avaliações mais recentes</h3>
             <div class="mt-3 bg-base-gray-700 rounded-lg p-6">
