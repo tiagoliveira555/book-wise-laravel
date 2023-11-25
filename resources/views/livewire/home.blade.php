@@ -16,28 +16,7 @@
                     <i class="text-lg ph ph-caret-right"></i>
                 </a>
             </div>
-            <div class="mt-5 py-5 px-6 rounded-lg flex items-center gap-6 bg-base-gray-600">
-                <img
-                    class="w-[108px] h-[152px]"
-                    src="{{ $this->authLastRating['book']['cover_url'] }}"
-                    alt="{{ $this->authLastRating['book']['name'] }}"
-                >
-                <div class="w-full">
-                    <div class="flex justify-between items-center">
-                        <span class="text-base-gray-300 text-sm">{{ $this->authLastRating['rating_date'] }}</span>
-                        <ul class="flex justify-center items-center gap-1 text-base-purple-100">
-                            <li><i class="ph-fill ph-star"></i></li>
-                            <li><i class="ph-fill ph-star"></i></li>
-                            <li><i class="ph-fill ph-star"></i></li>
-                            <li><i class="ph-fill ph-star"></i></li>
-                            <li><i class="ph ph-star"></i></li>
-                        </ul>
-                    </div>
-                    <h2 class="mt-3 font-bold text-base-gray-100">{{ $this->authLastRating['book']['name'] }}</h2>
-                    <h3 class="text-base-gray-400 text-sm">{{ $this->authLastRating['book']['author'] }}</h3>
-                    <p class="mt-6 text-sm text-base-gray-300">{{ $this->authLastRating['book']['summary'] }}</p>
-                </div>
-            </div>
+            <x-auth-last-review />
         </section>
         @endif
 
@@ -59,16 +38,18 @@
                 <i class="text-lg ph ph-caret-right"></i>
             </a>
         </header>
+
+        @foreach ($this->popularBooks as $popularBook)
         <div class="mt-3 flex rounded-lg py-4 px-5 gap-5 bg-base-gray-700">
             <img
                 class="w-16 h-[94px]"
-                src="images/books/a-revolucao-dos-bixos.png"
-                alt="A revolução dos bixos"
+                src="{{ $popularBook->cover_url }}"
+                alt="{{ $popularBook->name }}"
             >
             <div class="flex flex-col justify-between items-start">
                 <div>
-                    <h2 class="font-bold text-base-gray-100">A revolução dos bichos</h2>
-                    <h3 class="text-sm text-base-gray-400">George Orwell</h3>
+                    <h2 class="font-bold text-base-gray-100">{{ $popularBook->name }}</h2>
+                    <h3 class="text-sm text-base-gray-400">{{ $popularBook->author }}</h3>
                 </div>
                 <ul class="flex justify-center items-center gap-1 text-base-purple-100">
                     <li><i class="ph-fill ph-star"></i></li>
@@ -79,65 +60,7 @@
                 </ul>
             </div>
         </div>
-        <div class="mt-3 flex rounded-lg py-4 px-5 gap-5 bg-base-gray-700">
-            <img
-                class="w-16 h-[94px]"
-                src="images/books/14-habitos-de-desenvolvedores-altamente-produtivos.png"
-                alt="14 Hábitos de Desenvolvedores Alta..."
-            >
-            <div class="flex flex-col justify-between items-start">
-                <div>
-                    <h2 class="font-bold text-base-gray-100">14 Hábitos de Desenvolvedores Alta...</h2>
-                    <h3 class="text-sm text-base-gray-400">Zeno Rocha</h3>
-                </div>
-                <ul class="flex justify-center items-center gap-1 text-base-purple-100">
-                    <li><i class="ph-fill ph-star"></i></li>
-                    <li><i class="ph-fill ph-star"></i></li>
-                    <li><i class="ph-fill ph-star"></i></li>
-                    <li><i class="ph-fill ph-star"></i></li>
-                    <li><i class="ph ph-star"></i></li>
-                </ul>
-            </div>
-        </div>
-        <div class="mt-3 flex rounded-lg py-4 px-5 gap-5 bg-base-gray-700">
-            <img
-                class="w-16 h-[94px]"
-                src="images/books/o-fim-da-eternidade.png"
-                alt="O Fim da Eternidade"
-            >
-            <div class="flex flex-col justify-between items-start">
-                <div>
-                    <h2 class="font-bold text-base-gray-100">O Fim da Eternidade</h2>
-                    <h3 class="text-sm text-base-gray-400">Isaac Asimov</h3>
-                </div>
-                <ul class="flex justify-center items-center gap-1 text-base-purple-100">
-                    <li><i class="ph-fill ph-star"></i></li>
-                    <li><i class="ph-fill ph-star"></i></li>
-                    <li><i class="ph-fill ph-star"></i></li>
-                    <li><i class="ph-fill ph-star"></i></li>
-                    <li><i class="ph ph-star"></i></li>
-                </ul>
-            </div>
-        </div>
-        <div class="mt-3 flex rounded-lg py-4 px-5 gap-5 bg-base-gray-700">
-            <img
-                class="w-16 h-[94px]"
-                src="images/books/entendendo-algoritmos.png"
-                alt="Entendendo Algoritmos"
-            >
-            <div class="flex flex-col justify-between items-start">
-                <div>
-                    <h2 class="font-bold text-base-gray-100">Entendendo Algoritmos</h2>
-                    <h3 class="text-sm text-base-gray-400">Aditya Bhargava</h3>
-                </div>
-                <ul class="flex justify-center items-center gap-1 text-base-purple-100">
-                    <li><i class="ph-fill ph-star"></i></li>
-                    <li><i class="ph-fill ph-star"></i></li>
-                    <li><i class="ph-fill ph-star"></i></li>
-                    <li><i class="ph-fill ph-star"></i></li>
-                    <li><i class="ph ph-star"></i></li>
-                </ul>
-            </div>
-        </div>
+        @endforeach
+
     </div>
 </div>

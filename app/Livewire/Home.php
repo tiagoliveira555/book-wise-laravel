@@ -56,4 +56,10 @@ class Home extends Component
 
         return $returnData ?? [];
     }
+
+    #[Computed()]
+    public function popularBooks()
+    {
+        return Book::query()->withCount('ratings')->orderByDesc('ratings_count')->limit(4)->get();
+    }
 }
