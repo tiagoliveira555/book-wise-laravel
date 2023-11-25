@@ -23,9 +23,10 @@
     </div>
     <main class="grid grid-cols-3 gap-5 mt-12 pb-10 overflow-auto scrollbar-hide h-[728px] rounded">
 
-        @foreach ($this->books as $book)
-            <x-book :$book />
+        @foreach ($books as $book)
+            <x-book wire:key="{{ $book->id }}" :$book />
         @endforeach
 
     </main>
+
 </div>

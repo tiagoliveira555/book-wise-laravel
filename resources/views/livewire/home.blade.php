@@ -23,8 +23,8 @@
         <section class="mt-10">
             <h3 class="text-sm text-base-gray-100 mb-1">Avaliações mais recentes</h3>
 
-            @foreach ($this->ratings as $rating)
-                <x-latest-reviews :$rating />
+            @foreach ($ratings as $rating)
+                <x-latest-reviews wire:key="{{ $rating->id }}" :$rating />
             @endforeach
 
         </section>
@@ -40,7 +40,7 @@
         </header>
 
         @foreach ($this->popularBooks as $popularBook)
-            <x-popular-book :$popularBook />
+            <x-popular-book wire:key="{{ $popularBook->id }}" :$popularBook />
         @endforeach
 
     </div>
