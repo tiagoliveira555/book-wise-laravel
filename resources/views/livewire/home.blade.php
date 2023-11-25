@@ -1,12 +1,13 @@
 <div class="flex">
-    <div class="w-[608px] h-[930px] p-[-20px] rounded ml-24 mr-16 overflow-auto scrollbar-hide">
+    <div class="w-[608px] h-[930px] pb-8 rounded ml-24 mr-16 overflow-auto scrollbar-hide">
         <header class="mt-[52px]">
             <div class="w-36 flex items-center gap-3">
                 <i class="text-3xl text-base-green-100 ph ph-chart-line-up"></i>
                 <h2 class="text-base-gray-100 text-2xl font-bold">Início</h2>
             </div>
         </header>
-        @if (auth()->check())
+
+        @if (count($this->authLastRating) > 0)
         <section class="mt-10">
             <div class="flex justify-between items-center">
                 <h3 class="text-base-gray-100 text-sm">Sua última leitura</h3>
@@ -18,12 +19,12 @@
             <div class="mt-5 py-5 px-6 rounded-lg flex items-center gap-6 bg-base-gray-600">
                 <img
                     class="w-[108px] h-[152px]"
-                    src="images/books/entendendo-algoritmos.png"
-                    alt="Entendendo Algoritmos"
+                    src="{{ $this->authLastRating['book']['cover_url'] }}"
+                    alt="{{ $this->authLastRating['book']['name'] }}"
                 >
                 <div class="w-full">
                     <div class="flex justify-between items-center">
-                        <span class="text-base-gray-300 text-sm">Há 2 dias</span>
+                        <span class="text-base-gray-300 text-sm">{{ $this->authLastRating['rating_date'] }}</span>
                         <ul class="flex justify-center items-center gap-1 text-base-purple-100">
                             <li><i class="ph-fill ph-star"></i></li>
                             <li><i class="ph-fill ph-star"></i></li>
@@ -32,9 +33,9 @@
                             <li><i class="ph ph-star"></i></li>
                         </ul>
                     </div>
-                    <h2 class="mt-3 font-bold text-base-gray-100">Entendendo Algoritmos</h2>
-                    <h3 class="text-base-gray-400 text-sm">Aditya Bhargava</h3>
-                    <p class="mt-6 text-sm text-base-gray-300">Nec tempor nunc in egestas. Euismod nisi eleifend at et in sagittis. Penatibus id vestibulum imperdiet a at imperdiet lectu...</p>
+                    <h2 class="mt-3 font-bold text-base-gray-100">{{ $this->authLastRating['book']['name'] }}</h2>
+                    <h3 class="text-base-gray-400 text-sm">{{ $this->authLastRating['book']['author'] }}</h3>
+                    <p class="mt-6 text-sm text-base-gray-300">{{ $this->authLastRating['book']['summary'] }}</p>
                 </div>
             </div>
         </section>
@@ -42,9 +43,11 @@
 
         <section class="mt-10">
             <h3 class="text-sm text-base-gray-100 mb-1">Avaliações mais recentes</h3>
+
             @foreach ($this->ratings as $rating)
-            <x-latest-reviews :$rating />
+                <x-latest-reviews :$rating />
             @endforeach
+
         </section>
 
     </div>

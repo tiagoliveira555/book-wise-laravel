@@ -2,10 +2,14 @@
 
 namespace App\Livewire;
 
+use App\Models\Book;
 use App\Models\Rating;
 use Carbon\Carbon;
 use Illuminate\Contracts\View\View;
+use Livewire\Attributes\Computed;
 use Livewire\Component;
+
+Carbon::setLocale('pt_BR');
 
 class Home extends Component
 {
@@ -29,8 +33,27 @@ class Home extends Component
 
     public function convertDateForHumans(string $date): string
     {
-        Carbon::setLocale('pt_BR');
-
         return Carbon::parse($date)->diffForHumans();
+    }
+
+    #[Computed()]
+    public function authLastRating()
+    {
+        if (auth()->check()) {
+            $rating = auth()->user()->ratings()->orderBy('created_at', 'desc')->first();
+
+            if ($rating) {
+                $rating_date = Carbon::parse($rating->created_at)->diffForHumans();
+                $book = Book::query()->find($rating->book_id, ['id', 'name', 'author', 'summary', 'cover_url']);
+
+                $returnData = [
+                    'rate' => $rating->rate,
+                    'rating_date' => $rating_date,
+                    'book' => $book,
+                ];
+            }
+        }
+
+        return $returnData ?? [];
     }
 }
