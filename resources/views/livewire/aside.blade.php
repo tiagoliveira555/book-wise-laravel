@@ -4,7 +4,7 @@
         <div class="flex flex-col gap-4 ml-12 mt-16">
 
             <x-link-aside id="/" icon="chart-line-up" text="Início" />
-            <x-link-aside id="explorer" icon="binoculars" text="Explorar" />
+            <x-link-aside id="explore" icon="binoculars" text="Explorar" />
 
             @if (auth()->check())
                 <x-link-aside id="profile" icon="user" text="Perfil" />

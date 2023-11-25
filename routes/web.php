@@ -1,6 +1,6 @@
 <?php
 
-use App\Livewire\Explorer;
+use App\Livewire\Explore;
 use App\Livewire\Home;
 use App\Livewire\Login;
 use App\Livewire\Profile;
@@ -33,7 +33,7 @@ Route::get('/auth/{driver}/callback', function ($driver) {
 });
 
 Route::get('/', Home::class)->name('home');
-Route::get('/explorer', Explorer::class)->name('explorer');
+Route::get('/explore', Explore::class)->name('explore');
 Route::get('/profile', Profile::class)->name('profile');
 Route::get('/login', Login::class)->name('login');
 
