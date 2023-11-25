@@ -6,7 +6,7 @@
             </a>
             <div>
                 <h3 class="text-base-gray-100">{{ $rating['user']['name'] }}</h3>
-                <h4 class="text-sm text-base-gray-400">Hoje</h4>
+                <h4 class="text-sm text-base-gray-400">{{ $this->convertDateForHumans($rating['created_at']) }}</h4>
             </div>
         </div>
         <ul class="flex justify-center items-center gap-1 text-base-purple-100">

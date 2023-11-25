@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use App\Models\Rating;
+use Carbon\Carbon;
 use Livewire\Component;
 
 class Home extends Component
@@ -20,5 +21,12 @@ class Home extends Component
         return view('livewire.home', [
             $this->ratings = $ratings->toArray(),
         ]);
+    }
+
+    public function convertDateForHumans($date)
+    {
+        Carbon::setLocale('pt_BR');
+
+        return Carbon::parse($date)->diffForHumans();
     }
 }
