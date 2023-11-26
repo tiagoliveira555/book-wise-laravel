@@ -1,10 +1,8 @@
 <div>
-    <div class="fixed inset-0 w-full h-full opacity-60 blur-sm bg-black">
-
-    </div>
+    <div x-on:click="open = false" class="fixed inset-0 w-full h-full opacity-60 blur-sm bg-black"></div>
     <div class="fixed top-0 pb-10 right-0 w-[660px] z-10 h-full bg-base-gray-800 overflow-auto">
         <header class="flex justify-end items-center w-full">
-            <button class="mt-6 mr-12 flex justify-center items-center text-base-gray-400">
+            <button x-on:click="open = false" class="mt-6 mr-12 flex justify-center items-center text-base-gray-400">
                 <i class="text-xl ph ph-x"></i>
             </button>
         </header>

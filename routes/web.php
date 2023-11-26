@@ -37,6 +37,4 @@ Route::get('/explore', Explore::class)->name('explore');
 Route::get('/profile', Profile::class)->name('profile');
 Route::get('/login', Login::class)->name('login');
 
-Route::view('/book', 'book');
-
 require __DIR__.'/auth.php';
