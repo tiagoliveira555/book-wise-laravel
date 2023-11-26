@@ -21,16 +21,26 @@
             <li class="py-1 px-4 rounded-full text-center text-base-purple-100 border border-base-purple-100 hover:border-base-purple-100 transition-all">Suspense</li>
         </ul>
     </div>
-    <main x-data="{ open: false, books: {{ $books }} }" class="grid grid-cols-3 gap-5 mt-12 pb-10 overflow-auto scrollbar-hide h-[728px] rounded">
+
+    <main
+        x-data="{
+            open: false,
+            bookSelected: {},
+            books: {{ $books }},
+            modal(book) {
+                this.open = true
+                this.bookSelected = book
+            },
+            covertCategories(categories) {
+                const categoryName = categories.map(category => category.name)
+                return categoryName.join(', ')
+            }
+        }"
+        class="grid grid-cols-3 gap-5 mt-12 pb-10 overflow-auto scrollbar-hide h-[728px] rounded">
 
         <template x-for="book in books" :key="book.id">
             <x-book />
         </template>
-
-        {{-- @foreach ($books as $book)
-            <x-book wire:key="{{ $book->id }}" :$book />
-        @endforeach --}}
-
 
         <div x-show="open">
             <x-book-description />

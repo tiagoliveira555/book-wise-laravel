@@ -6,18 +6,19 @@
                 <i class="text-xl ph ph-x"></i>
             </button>
         </header>
+
         <main class="flex flex-col mt-5">
             <div class="w-[564px] mx-auto bg-base-gray-700 rounded-[10px] py-6 px-8 flex flex-col">
                 <div class="flex gap-8">
                     <img
                     class="w-[171px] h-[242px]"
-                    src="images/books/14-habitos-de-desenvolvedores-altamente-produtivos.png"
-                    alt="14 Hábitos de Desenvolvedores Alta..."
+                    :src="bookSelected.cover_url"
+                    :alt="bookSelected.name"
                 >
                 <div class="flex flex-col justify-between items-start">
                     <div class="flex flex-col gap-2">
-                        <h2 class="font-bold text-base-gray-100 text-lg">14 Hábitos de Desenvolvedores Altamente Produtivos</h2>
-                        <h3 class="text-base-gray-300">Zeno Rocha</h3>
+                        <h2 class="font-bold text-base-gray-100 text-lg" x-text="bookSelected.name"></h2>
+                        <h3 class="text-base-gray-300" x-text="bookSelected.author"></h3>
                     </div>
                     <div class="flex gap-1 flex-col">
                         <ul class="flex justify-center items-center gap-1 text-base-purple-100">
@@ -36,14 +37,14 @@
                         <i class="text-2xl text-base-green-100 ph ph-bookmark-simple"></i>
                         <div>
                             <h3 class="text-sm text-base-gray-300">Categoria</h3>
-                            <h2 class="font-bold text-base-gray-200">Computação, educação</h2>
+                            <h2 class="font-bold text-base-gray-200" x-text="covertCategories(bookSelected.categories)"></h2>
                         </div>
                     </div>
                     <div class="px-1 flex items-center gap-4">
                         <i class="text-2xl text-base-green-100 ph ph-book-open"></i>
                         <div>
                             <h3 class="text-sm text-base-gray-300">Páginas</h3>
-                            <h2 class="font-bold text-base-gray-200">160</h2>
+                            <h2 class="font-bold text-base-gray-200" x-text="bookSelected.total_pages"></h2>
                         </div>
                     </div>
                 </div>

@@ -12,7 +12,7 @@ class Explore extends Component
     public function render()
     {
         return view('livewire.explore', [
-            $this->books = Book::query()->get(),
+            $this->books = Book::query()->with('categories')->get(),
         ]);
     }
 }

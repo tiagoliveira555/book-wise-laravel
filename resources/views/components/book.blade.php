@@ -1,4 +1,4 @@
-<button x-on:click="open = true" class="flex rounded-lg py-4 px-5 gap-5 bg-base-gray-700 border-2 border-transparent hover:border-base-gray-600 transition-all">
+<button x-on:click="modal(book)" class="flex rounded-lg py-4 px-5 gap-5 bg-base-gray-700 border-2 border-transparent hover:border-base-gray-600 transition-all">
     <img
         class="w-[108px] h-[152px]"
         :src="book.cover_url"
