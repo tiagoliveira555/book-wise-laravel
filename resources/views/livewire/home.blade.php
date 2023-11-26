@@ -33,8 +33,8 @@
     <div class="w-[324px]">
         <header class="flex justify-between items-center mt-[126px] mb-5">
             <h3 class="text-base-gray-100 text-sm">Livros populares</h3>
-            <a href="#" class="flex items-center gap-2 py-1 px-2 rounded text-base-purple-100">
-                <span class="font-bold">Ver todas</span>
+            <a href="{{ route('explore') }}" wire:navigate class="flex items-center gap-2 py-1 px-2 rounded text-base-purple-100">
+                <span class="font-bold">Ver todos</span>
                 <i class="text-lg ph ph-caret-right"></i>
             </a>
         </header>

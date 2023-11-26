@@ -11,7 +11,6 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
 use Laravel\Socialite\Facades\Socialite;
 use Nette\Utils\Random;
-use Ramsey\Uuid\Uuid;
 
 Route::get('/auth/{driver}', function ($driver) {
     return Socialite::driver($driver)->redirect();
@@ -21,7 +20,6 @@ Route::get('/auth/{driver}/callback', function ($driver) {
     $socialUser = Socialite::driver($driver)->stateless()->user();
 
     $user = User::query()->firstOrCreate(['email' => $socialUser->email], [
-            'id' => Uuid::uuid4()->toString(),
             'name' => $socialUser->name,
             'avatar_url' => $socialUser->avatar,
             'password' => Hash::make(Random::generate(8)),

@@ -41,9 +41,9 @@
             <x-book />
         </template>
 
-        <div x-show="open">
+        <template x-if="open">
             <x-book-description />
-        </div>
+        </template>
 
     </main>
 
