@@ -11,9 +11,7 @@ class Book extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['id', 'name', 'author', 'summary', 'cover_url', 'total_pages'];
-
-    public $incrementing = false;
+    protected $fillable = ['name', 'author', 'summary', 'cover_url', 'total_pages'];
 
     public function categories(): BelongsToMany
     {

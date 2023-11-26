@@ -11,15 +11,12 @@ return new class() extends Migration {
     public function up(): void
     {
         Schema::create('ratings', function (Blueprint $table) {
-            $table->uuid('id')->primary();
+            $table->id();
             $table->integer('rate');
             $table->text('description');
-            $table->uuid('user_id');
-            $table->uuid('book_id');
+            $table->foreignId('user_id')->constrained();
+            $table->foreignId('book_id')->constrained();
             $table->timestamps();
-
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('book_id')->references('id')->on('books')->onDelete('cascade');
         });
     }
 
