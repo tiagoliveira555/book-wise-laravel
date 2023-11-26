@@ -32,8 +32,7 @@
                 this.bookSelected = book
             },
             covertCategories(categories) {
-                const categoryName = categories.map(category => category.name)
-                return categoryName.join(', ')
+                return categories.map(category => category.name).join(', ')
             }
         }"
         class="grid grid-cols-3 gap-5 mt-12 pb-10 overflow-auto scrollbar-hide h-[728px] rounded">

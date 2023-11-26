@@ -43,13 +43,10 @@ class Home extends Component
             $rating = auth()->user()->ratings()->orderBy('created_at', 'desc')->first();
 
             if ($rating) {
-                $rating_date = Carbon::parse($rating->created_at)->diffForHumans();
-                $book = Book::query()->find($rating->book_id, ['id', 'name', 'author', 'summary', 'cover_url']);
-
                 $returnData = [
                     'rate' => $rating->rate,
-                    'rating_date' => $rating_date,
-                    'book' => $book,
+                    'rating_date' => Carbon::parse($rating->created_at)->diffForHumans(),
+                    'book' => Book::query()->find($rating->book_id, ['id', 'name', 'author', 'summary', 'cover_url']),
                 ];
             }
         }

@@ -28,7 +28,7 @@
                             <li class="text-xl"><i class="ph-fill ph-star"></i></li>
                             <li class="text-xl"><i class="ph ph-star"></i></li>
                         </ul>
-                        <span class="text-sm text-base-gray-400">3 avaliações</span>
+                        <span class="text-sm text-base-gray-400"><span x-text="bookSelected.ratings_count"></span> avaliações</span>
                     </div>
                 </div>
             </div>
