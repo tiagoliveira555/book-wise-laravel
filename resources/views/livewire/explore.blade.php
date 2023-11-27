@@ -25,7 +25,7 @@
     <main
         x-data="{
             open: false,
-            bookSelected: {},
+            {{-- bookSelected: {},
             books: {{ $books }},
             modal(book) {
                 this.open = true
@@ -33,13 +33,17 @@
             },
             covertCategories(categories) {
                 return categories.map(category => category.name).join(', ')
-            }
+            } --}}
         }"
         class="grid grid-cols-3 gap-5 mt-12 pb-10 overflow-auto scrollbar-hide h-[728px] rounded">
 
-        <template x-for="book in books" :key="book.id">
+        @foreach ($books as $book)
+            <x-book :$book />
+        @endforeach
+
+        {{-- <template x-for="book in books" :key="book.id">
             <x-book />
-        </template>
+        </template> --}}
 
         <template x-if="open">
             <x-book-description />

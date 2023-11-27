@@ -9,16 +9,12 @@ use Illuminate\Contracts\View\View;
 use Livewire\Attributes\Computed;
 use Livewire\Component;
 
-Carbon::setLocale('pt_BR');
-
 class Home extends Component
 {
-    public mixed $ratings = [];
-
     public function render(): View
     {
         return view('livewire.home', [
-            $this->ratings = $this->getLastTenRatings(),
+            'ratings' => $this->getLastTenRatings(),
         ]);
     }
 
@@ -33,6 +29,8 @@ class Home extends Component
 
     public function convertDateForHumans(string $date): string
     {
+        Carbon::setLocale('pt_BR');
+
         return Carbon::parse($date)->diffForHumans();
     }
 
@@ -45,7 +43,7 @@ class Home extends Component
             if ($rating) {
                 $returnData = [
                     'rate' => $rating->rate,
-                    'rating_date' => Carbon::parse($rating->created_at)->diffForHumans(),
+                    'rating_date' => $this->convertDateForHumans($rating->created_at),
                     'book' => Book::query()->find($rating->book_id, ['id', 'name', 'author', 'summary', 'cover_url']),
                 ];
             }
