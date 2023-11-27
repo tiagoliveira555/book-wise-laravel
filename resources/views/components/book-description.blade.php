@@ -53,55 +53,58 @@
             </div>
         </main>
 
-        <div class="mx-12 mt-[46px] mb-4 flex justify-between items-center">
-            <h2 class="text-base-gray-200 text-sm">Avaliações</h2>
-            <button class="py-1 px-2 text-bold text-base-purple-100">Avaliar</button>
+        <div x-data="{ modal: false }">
+            <div class="mx-12 mt-[46px] mb-4 flex justify-between items-center">
+                <h2 class="text-base-gray-200 text-sm">Avaliações</h2>
+                <button class="py-1 px-2 text-bold text-base-purple-100" x-on:click="modal = true">Avaliar</button>
+            </div>
+            <template x-if="modal">
+                <div class="flex flex-col gap-3 px-12">
+
+                    @if (auth()->check())
+
+                    <div class="flex flex-col rounded-lg p-6 bg-base-gray-700">
+                        <header class="flex justify-between w-full">
+                            <div class="flex items-center gap-4 flex-1">
+                                <a href="{{ route('profile') }}" wire:navigate class="h-10 w-10 flex justify-center items-center bg-gradient-vertical rounded-full cursor-pointer">
+                                    <img class="rounded-full w-9 h-9" src="{{ auth()->user()->avatar_url }}" alt="{{ auth()->user()->name }}">
+                                </a>
+                                <span class="font-bold text-base-gray-100">{{ auth()->user()->name }}</span>
+                            </div>
+                            <ul class="flex justify-center items-center gap-1 text-base-purple-100">
+                                <li class="text-[28px]"><i class="ph ph-star"></i></li>
+                                <li class="text-[28px]"><i class="ph ph-star"></i></li>
+                                <li class="text-[28px]"><i class="ph ph-star"></i></li>
+                                <li class="text-[28px]"><i class="ph ph-star"></i></li>
+                                <li class="text-[28px]"><i class="ph ph-star"></i></li>
+                            </ul>
+                        </header>
+                        <div class="relative mt-6 mb-3 h-[164px] rounded border bg-base-gray-800 text-sm border-base-gray-500 text-base-gray-400 focus-within:border-base-green-200">
+                            <textarea class="resize-none bg-transparent w-full h-full placeholder:text-sm placeholder:text-base-gray-400 border-none outline-none focus:ring-0" name="a" placeholder="Escreva sua avaliação"></textarea>
+                            <span class="absolute bottom-1 right-1 text-xs text-base-gray-400">0/450</span>
+                        </div>
+                        <div class="flex justify-end items-center gap-2">
+                            <button x-on:click="modal = false" class="flex justify-center items-center p-2 rounded bg-base-gray-600 text-base-purple-100 text-2xl hover:bg-base-gray-500 transition-all">
+                                <i class="ph ph-x"></i>
+                            </button>
+                            <button class="flex justify-center items-center p-2 rounded bg-base-gray-600 text-base-green-100 text-2xl hover:bg-base-gray-500 transition-all">
+                                <i class="ph ph-check"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    @else
+
+                    <x-modal-signin />
+
+                    @endif
+                </div>
+            </template>
         </div>
         <div class="flex flex-col gap-3 px-12">
-
-            @if (auth()->check())
-
-            <div class="flex flex-col rounded-lg p-6 bg-base-gray-700">
-                <header class="flex justify-between w-full">
-                    <div class="flex items-center gap-4 flex-1">
-                        <a href="{{ route('profile') }}" wire:navigate class="h-10 w-10 flex justify-center items-center bg-gradient-vertical rounded-full cursor-pointer">
-                            <img class="rounded-full w-9 h-9" src="{{ auth()->user()->avatar_url }}" alt="{{ auth()->user()->name }}">
-                        </a>
-                        <span class="font-bold text-base-gray-100">{{ auth()->user()->name }}</span>
-                    </div>
-                    <ul class="flex justify-center items-center gap-1 text-base-purple-100">
-                        <li class="text-[28px]"><i class="ph ph-star"></i></li>
-                        <li class="text-[28px]"><i class="ph ph-star"></i></li>
-                        <li class="text-[28px]"><i class="ph ph-star"></i></li>
-                        <li class="text-[28px]"><i class="ph ph-star"></i></li>
-                        <li class="text-[28px]"><i class="ph ph-star"></i></li>
-                    </ul>
-                </header>
-                <div class="relative mt-6 mb-3 h-[164px] rounded border bg-base-gray-800 text-sm border-base-gray-500 text-base-gray-400 focus-within:border-base-green-200">
-                    <textarea class="resize-none bg-transparent w-full h-full placeholder:text-sm placeholder:text-base-gray-400 border-none outline-none focus:ring-0" name="a" placeholder="Escreva sua avaliação"></textarea>
-                    <span class="absolute bottom-1 right-1 text-xs text-base-gray-400">0/450</span>
-                </div>
-                <div class="flex justify-end items-center gap-2">
-                    <button class="flex justify-center items-center p-2 rounded bg-base-gray-600 text-base-purple-100 text-2xl hover:bg-base-gray-500 transition-all">
-                        <i class="ph ph-x"></i>
-                    </button>
-                    <button class="flex justify-center items-center p-2 rounded bg-base-gray-600 text-base-green-100 text-2xl hover:bg-base-gray-500 transition-all">
-                        <i class="ph ph-check"></i>
-                    </button>
-                </div>
-            </div>
-
-            @else
-
-            <x-modal-signin />
-
-            @endif
-
-
             @foreach ($this->book->ratings->sortByDesc('created_at') as $rating)
             <x-rating-description :$rating />
             @endforeach
-
         </div>
         @endif
     </div>
