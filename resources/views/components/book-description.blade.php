@@ -58,13 +58,16 @@
             <button class="py-1 px-2 text-bold text-base-purple-100">Avaliar</button>
         </div>
         <div class="flex flex-col gap-3 px-12">
-            {{-- <div class="flex flex-col rounded-lg p-6 bg-base-gray-700">
+
+            @if (auth()->check())
+
+            <div class="flex flex-col rounded-lg p-6 bg-base-gray-700">
                 <header class="flex justify-between w-full">
                     <div class="flex items-center gap-4 flex-1">
-                        <div class="bg-gradient-vertical h-10 w-10 flex justify-center items-center border rounded-full">
-
-                        </div>
-                        <span class="font-bold text-base-gray-100">Cristofer Rosser</span>
+                        <a href="{{ route('profile') }}" wire:navigate class="h-10 w-10 flex justify-center items-center bg-gradient-vertical rounded-full cursor-pointer">
+                            <img class="rounded-full w-9 h-9" src="{{ auth()->user()->avatar_url }}" alt="{{ auth()->user()->name }}">
+                        </a>
+                        <span class="font-bold text-base-gray-100">{{ auth()->user()->name }}</span>
                     </div>
                     <ul class="flex justify-center items-center gap-1 text-base-purple-100">
                         <li class="text-[28px]"><i class="ph ph-star"></i></li>
@@ -86,9 +89,16 @@
                         <i class="ph ph-check"></i>
                     </button>
                 </div>
-            </div> --}}
+            </div>
 
-            @foreach ($this->book->ratings as $rating)
+            @else
+
+            <x-modal-signin />
+
+            @endif
+
+
+            @foreach ($this->book->ratings->sortByDesc('created_at') as $rating)
             <x-rating-description :$rating />
             @endforeach
 

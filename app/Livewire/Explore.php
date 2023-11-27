@@ -8,7 +8,7 @@ use Livewire\Component;
 
 class Explore extends Component
 {
-    public $book;
+    public ?Book $book = null;
 
     public function render()
     {
