@@ -10,7 +10,7 @@ class Rating extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['rate', 'description'];
+    protected $fillable = ['rate', 'description', 'user_id', 'book_id'];
 
     public function user(): BelongsTo
     {
