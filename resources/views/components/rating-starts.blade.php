@@ -23,7 +23,9 @@
     x-bind:class="{ 'cursor-pointer': isEditable }"
 >
     @foreach (range(1, 5) as $index)
-    <li>
+    <li
+        x-bind:class="{ 'text-[28px]': isEditable }"
+    >
         <i
             class="ph-star"
             x-bind:class="{ 'ph-fill': {{ $index }} <= previewValue, 'ph': {{ $index }} > previewValue }"
