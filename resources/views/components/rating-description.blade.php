@@ -1,5 +1,11 @@
 @php
-    $bg = $rating->user_id === auth()->user()->id ? 'bg-base-gray-600' : 'bg-base-gray-700';
+    $bg = 'bg-base-gray-700';
+
+    if (auth()->check()) {
+        if ($rating->user_id === auth()->user()->id) {
+            $bg = 'bg-base-gray-600';
+       }
+    }
 @endphp
 
 <div wire:key="{{ $rating->id }}" class="{{ $bg }} flex flex-col gap-5 p-6 rounded-lg">
