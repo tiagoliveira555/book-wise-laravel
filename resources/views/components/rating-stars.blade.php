@@ -1,13 +1,14 @@
 @props([
     'rate' => 0,
-    'isEditable' => false
+    'isEditable' => false,
+    'color' => 'text-base-purple-100'
 ])
 
 <ul
     x-data="{
         rating: {{ $rate }},
         isEditable: {{ $isEditable ? 'true' : 'false' }},
-        previewValue: this.isEditable ? 0 : {{ $rate }},
+        previewValue: {{ $rate }},
         handleMouseEnter(value) {
             if(this.isEditable) this.previewValue = value
         },
@@ -16,13 +17,13 @@
         },
         handleRate() {
             this.rating = this.previewValue
-        }
+            $wire.rate = this.rating
+        },
     }"
-
-    class="flex justify-center items-center gap-1 text-base-purple-100"
+    class="{{ $color }} flex justify-center items-center gap-1"
     x-bind:class="{ 'cursor-pointer': isEditable }"
 >
-    @foreach (range(1, 5) as $index)
+    @foreach ([1, 2, 3, 4, 5] as $index)
     <li
         x-bind:class="{ 'text-[28px]': isEditable }"
     >
@@ -37,4 +38,3 @@
     </li>
     @endforeach
 </ul>
-

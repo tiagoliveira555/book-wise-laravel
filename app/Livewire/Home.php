@@ -57,4 +57,16 @@ class Home extends Component
     {
         return Book::query()->withCount('ratings')->orderByDesc('ratings_count')->limit(4)->get();
     }
+
+    public function ratingAverage($ratings)
+    {
+        $ratingsCount = count($ratings);
+        $ratingSum = 0;
+
+        foreach ($ratings as $rating) {
+            $ratingSum += $rating->rate;
+        }
+
+        return round($ratingSum / $ratingsCount);
+    }
 }

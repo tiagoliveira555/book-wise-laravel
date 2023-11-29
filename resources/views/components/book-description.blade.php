@@ -23,13 +23,9 @@
                         <h3 class="text-base-gray-300">{{ $this->book->author }}</h3>
                     </div>
                     <div class="flex gap-1 flex-col">
-                        <ul class="flex justify-center items-center gap-1 text-base-purple-100">
-                            <li class="text-xl"><i class="ph-fill ph-star"></i></li>
-                            <li class="text-xl"><i class="ph-fill ph-star"></i></li>
-                            <li class="text-xl"><i class="ph-fill ph-star"></i></li>
-                            <li class="text-xl"><i class="ph-fill ph-star"></i></li>
-                            <li class="text-xl"><i class="ph ph-star"></i></li>
-                        </ul>
+
+                        <x-rating-stars rate="{{ $this->ratingAverage($this->book->ratings) }}" />
+
                         <span class="text-sm text-base-gray-400">{{ count($this->book->ratings) }} avaliações</span>
                     </div>
                 </div>
@@ -75,7 +71,7 @@
             @endif
         </div>
         <div class="flex flex-col gap-3 px-12">
-            @foreach ($this->book->ratings->sortByDesc('created_at') as $rating)
+            @foreach ($this->book->ratings as $rating)
             <x-rating-description :$rating />
             @endforeach
         </div>

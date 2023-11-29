@@ -7,13 +7,8 @@
     <div class="w-full">
         <div class="flex justify-between items-center">
             <span class="text-base-gray-300 text-sm">{{ $this->authLastRating['rating_date'] }}</span>
-            <ul class="flex justify-center items-center gap-1 text-base-purple-100">
-                <li><i class="ph-fill ph-star"></i></li>
-                <li><i class="ph-fill ph-star"></i></li>
-                <li><i class="ph-fill ph-star"></i></li>
-                <li><i class="ph-fill ph-star"></i></li>
-                <li><i class="ph ph-star"></i></li>
-            </ul>
+
+            <x-rating-stars rate="{{ $this->authLastRating['rate'] }}" />
         </div>
         <h2 class="mt-3 font-bold text-base-gray-100">{{ $this->authLastRating['book']['name'] }}</h2>
         <h3 class="text-base-gray-400 text-sm">{{ $this->authLastRating['book']['author'] }}</h3>

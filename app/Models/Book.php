@@ -20,6 +20,6 @@ class Book extends Model
 
     public function ratings(): HasMany
     {
-        return $this->hasMany(Rating::class);
+        return $this->hasMany(Rating::class)->orderBy('created_at', 'desc');
     }
 }

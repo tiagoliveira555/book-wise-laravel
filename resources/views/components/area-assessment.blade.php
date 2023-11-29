@@ -1,4 +1,3 @@
-
 @php
     $border = $errors->has('description') ? 'border-red-800' : 'border-base-gray-500';
 @endphp

@@ -6,13 +6,9 @@
             </a>
             <span class="font-bold text-base-gray-100">{{ auth()->user()->name }}</span>
         </div>
-        <ul class="flex justify-center items-center gap-1 text-base-purple-100">
-            <li class="text-[28px]"><i class="ph ph-star"></i></li>
-            <li class="text-[28px]"><i class="ph ph-star"></i></li>
-            <li class="text-[28px]"><i class="ph ph-star"></i></li>
-            <li class="text-[28px]"><i class="ph ph-star"></i></li>
-            <li class="text-[28px]"><i class="ph ph-star"></i></li>
-        </ul>
+
+        <x-rating-stars isEditable="true" color="{{ $errors->has('rate') ? 'text-red-500' : 'text-base-purple-100' }}" />
+
     </header>
 
     <x-area-assessment />

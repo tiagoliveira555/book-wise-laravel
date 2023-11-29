@@ -1,4 +1,4 @@
-<div class="flex flex-col gap-5 p-6 rounded-lg bg-base-gray-700">
+<div wire:key="{{ $rating->id }}" class="flex flex-col gap-5 p-6 rounded-lg bg-base-gray-700">
     <div class="flex justify-between items-start gap-4">
         <div class="flex gap-4">
             <a href="{{ route('profile') }}" wire:navigate class="h-10 w-10 flex justify-center items-center bg-gradient-vertical rounded-full cursor-pointer">
@@ -9,13 +9,9 @@
                 <h3 class="text-sm text-base-gray-400">{{ $this->convertDateForHumans($rating->created_at) }}</h3>
             </div>
         </div>
-        <ul class="flex justify-center items-center gap-1 text-base-purple-100">
-            <li><i class="ph-fill ph-star"></i></li>
-            <li><i class="ph-fill ph-star"></i></li>
-            <li><i class="ph-fill ph-star"></i></li>
-            <li><i class="ph-fill ph-star"></i></li>
-            <li><i class="ph ph-star"></i></li>
-        </ul>
+
+        <x-rating-stars rate="{{ $rating->rate }}" />
+
     </div>
     <p class="text-base-gray-300 text-sm">{{ $rating->description }}</p>
 </div>
