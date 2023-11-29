@@ -9,13 +9,15 @@ use Livewire\Component;
 class Profile extends Component
 {
     #[Url()]
-    public $id;
+    public ?string $id = '';
 
     public ?User $user = null;
 
     public function render()
     {
-        $this->user = User::find($this->id);
+        if ($this->id) {
+            $this->user = User::find($this->id)->load('ratings');
+        }
 
         return view('livewire.profile');
     }

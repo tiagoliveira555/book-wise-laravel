@@ -4,7 +4,7 @@
     if (auth()->check()) {
         if ($rating->user_id === auth()->user()->id) {
             $bg = 'bg-base-gray-600';
-       }
+        }
     }
 @endphp
 
