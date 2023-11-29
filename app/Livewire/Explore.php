@@ -14,7 +14,7 @@ class Explore extends Component
 
     public bool $assessment = false;
 
-    #[Rule(['required', 'min:5', 'max:255'])]
+    #[Rule(['required', 'min:5', 'max:450'])]
     public string $description = '';
 
     #[Rule(['required', 'integer', 'between:1,5'])]

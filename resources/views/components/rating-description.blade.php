@@ -23,5 +23,5 @@
         <x-rating-stars rate="{{ $rating->rate }}" />
 
     </div>
-    <p class="text-base-gray-300 text-sm">{{ $rating->description }}</p>
+    <p class="truncate text-base-gray-300 text-sm">{{ $rating->description }}</p>
 </div>

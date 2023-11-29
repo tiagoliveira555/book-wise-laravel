@@ -11,5 +11,5 @@
         name="a"
         placeholder="Escreva sua avaliação"
     ></textarea>
-    <span class="absolute bottom-1 right-1 text-xs text-base-gray-400">0/450</span>
+    <span class="absolute bottom-1 right-1 text-xs text-base-gray-400"><span x-text="$wire.description.length"></span>/450</span>
 </div>
