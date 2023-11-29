@@ -1,7 +1,7 @@
 <div wire:key="{{ $rating->id }}" class="mt-3 bg-base-gray-700 rounded-lg p-6">
     <div class="flex justify-between items-start">
         <div class="flex gap-4">
-            <a href="{{ route('profile') }}" wire:navigate class="h-10 w-10 flex justify-center items-center bg-gradient-vertical rounded-full cursor-pointer">
+            <a href="{{ route('profile', ['id' => $rating->user->id]) }}" wire:navigate class="h-10 w-10 flex justify-center items-center bg-gradient-vertical rounded-full cursor-pointer">
                 <img class="rounded-full w-9 h-9" src="{{ $rating->user->avatar_url }}" alt="{{ $rating->user->name }}">
             </a>
             <div>

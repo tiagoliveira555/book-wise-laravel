@@ -1,4 +1,8 @@
-<div wire:key="{{ $rating->id }}" class="flex flex-col gap-5 p-6 rounded-lg bg-base-gray-700">
+@php
+    $bg = $rating->user_id === auth()->user()->id ? 'bg-base-gray-600' : 'bg-base-gray-700';
+@endphp
+
+<div wire:key="{{ $rating->id }}" class="{{ $bg }} flex flex-col gap-5 p-6 rounded-lg">
     <div class="flex justify-between items-start gap-4">
         <div class="flex gap-4">
             <a href="{{ route('profile') }}" wire:navigate class="h-10 w-10 flex justify-center items-center bg-gradient-vertical rounded-full cursor-pointer">

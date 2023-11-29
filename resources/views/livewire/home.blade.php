@@ -24,7 +24,7 @@
             <h3 class="text-sm text-base-gray-100 mb-1">Avaliações mais recentes</h3>
 
             @foreach ($ratings as $rating)
-                <x-latest-reviews wire:key="{{ $rating->id }}" :$rating />
+                <x-latest-reviews :$rating />
             @endforeach
 
         </section>
