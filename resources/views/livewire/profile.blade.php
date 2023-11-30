@@ -10,68 +10,70 @@
                 <i class="text-xl text-base-gray-500 ph ph-magnifying-glass peer-focus:text-base-green-200"></i>
             </div>
         </header>
-        <div class="flex flex-col gap-2">
-            <span class="text-base-gray-300 text-sm">Hoje</span>
-            <div class="bg-base-gray-700 rounded-lg p-6 flex flex-col gap-6">
-                <div class="flex gap-6">
-                    <img class="w-[98px] h-[134px] rounded" src="images/books/o-hobbit.png" alt="O Hobbit">
-                    <div class="flex flex-col justify-between">
-                        <div>
-                            <h2 class="text-lg font-bold text-base-gray-100">O Hobbit</h2>
-                            <h3 class="text-sm text-base-gray-400">Junji Ito</h3>
+        <div class="flex flex-col gap-6">
+            <div class="flex flex-col gap-2">
+                <span class="text-base-gray-300 text-sm">Hoje</span>
+                <div class="bg-base-gray-700 rounded-lg p-6 flex flex-col gap-6">
+                    <div class="flex gap-6">
+                        <img class="w-[98px] h-[134px] rounded" src="images/books/o-hobbit.png" alt="O Hobbit">
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <h2 class="text-lg font-bold text-base-gray-100">O Hobbit</h2>
+                                <h3 class="text-sm text-base-gray-400">Junji Ito</h3>
+                            </div>
+                            <x-rating-stars rate="4" />
                         </div>
-                        <x-rating-stars rate="4" />
                     </div>
+                    <p class="text-base-gray-300 text-sm">Ornare amet scelerisque eget sit in donec dui. Tempus eget porttitor hendrerit eros viverra. Sit eget ipsum purus morbi curabitur cras gravida adipiscing dictum. Dui duis ut auctor dolor et mattis ultrices. Convallis quis in tortor pretium hendrerit sed. Vel et nibh sodales blandit egestas a quis bibendum.</p>
                 </div>
-                <p class="text-base-gray-300 text-sm">Ornare amet scelerisque eget sit in donec dui. Tempus eget porttitor hendrerit eros viverra. Sit eget ipsum purus morbi curabitur cras gravida adipiscing dictum. Dui duis ut auctor dolor et mattis ultrices. Convallis quis in tortor pretium hendrerit sed. Vel et nibh sodales blandit egestas a quis bibendum.</p>
             </div>
-        </div>
-        <div class="flex flex-col gap-2">
-            <span class="text-base-gray-300 text-sm">Hoje</span>
-            <div class="bg-base-gray-700 rounded-lg p-6 flex flex-col gap-6">
-                <div class="flex gap-6">
-                    <img class="w-[98px] h-[134px] rounded" src="images/books/o-hobbit.png" alt="O Hobbit">
-                    <div class="flex flex-col justify-between">
-                        <div>
-                            <h2 class="text-lg font-bold text-base-gray-100">O Hobbit</h2>
-                            <h3 class="text-sm text-base-gray-400">Junji Ito</h3>
+            <div class="flex flex-col gap-2">
+                <span class="text-base-gray-300 text-sm">Há 3 dias</span>
+                <div class="bg-base-gray-700 rounded-lg p-6 flex flex-col gap-6">
+                    <div class="flex gap-6">
+                        <img class="w-[98px] h-[134px] rounded" src="images/books/o-hobbit.png" alt="O Hobbit">
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <h2 class="text-lg font-bold text-base-gray-100">O Hobbit</h2>
+                                <h3 class="text-sm text-base-gray-400">Junji Ito</h3>
+                            </div>
+                            <x-rating-stars rate="4" />
                         </div>
-                        <x-rating-stars rate="4" />
                     </div>
+                    <p class="text-base-gray-300 text-sm">Ornare amet scelerisque eget sit in donec dui. Tempus eget porttitor hendrerit eros viverra. Sit eget ipsum purus morbi curabitur cras gravida adipiscing dictum. Dui duis ut auctor dolor et mattis ultrices. Convallis quis in tortor pretium hendrerit sed. Vel et nibh sodales blandit egestas a quis bibendum.</p>
                 </div>
-                <p class="text-base-gray-300 text-sm">Ornare amet scelerisque eget sit in donec dui. Tempus eget porttitor hendrerit eros viverra. Sit eget ipsum purus morbi curabitur cras gravida adipiscing dictum. Dui duis ut auctor dolor et mattis ultrices. Convallis quis in tortor pretium hendrerit sed. Vel et nibh sodales blandit egestas a quis bibendum.</p>
             </div>
-        </div>
-        <div class="flex flex-col gap-2">
-            <span class="text-base-gray-300 text-sm">Hoje</span>
-            <div class="bg-base-gray-700 rounded-lg p-6 flex flex-col gap-6">
-                <div class="flex gap-6">
-                    <img class="w-[98px] h-[134px] rounded" src="images/books/o-hobbit.png" alt="O Hobbit">
-                    <div class="flex flex-col justify-between">
-                        <div>
-                            <h2 class="text-lg font-bold text-base-gray-100">O Hobbit</h2>
-                            <h3 class="text-sm text-base-gray-400">Junji Ito</h3>
+            <div class="flex flex-col gap-2">
+                <span class="text-base-gray-300 text-sm">Hoje</span>
+                <div class="bg-base-gray-700 rounded-lg p-6 flex flex-col gap-6">
+                    <div class="flex gap-6">
+                        <img class="w-[98px] h-[134px] rounded" src="images/books/o-hobbit.png" alt="O Hobbit">
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <h2 class="text-lg font-bold text-base-gray-100">O Hobbit</h2>
+                                <h3 class="text-sm text-base-gray-400">Junji Ito</h3>
+                            </div>
+                            <x-rating-stars rate="4" />
                         </div>
-                        <x-rating-stars rate="4" />
                     </div>
+                    <p class="text-base-gray-300 text-sm">Ornare amet scelerisque eget sit in donec dui. Tempus eget porttitor hendrerit eros viverra. Sit eget ipsum purus morbi curabitur cras gravida adipiscing dictum. Dui duis ut auctor dolor et mattis ultrices. Convallis quis in tortor pretium hendrerit sed. Vel et nibh sodales blandit egestas a quis bibendum.</p>
                 </div>
-                <p class="text-base-gray-300 text-sm">Ornare amet scelerisque eget sit in donec dui. Tempus eget porttitor hendrerit eros viverra. Sit eget ipsum purus morbi curabitur cras gravida adipiscing dictum. Dui duis ut auctor dolor et mattis ultrices. Convallis quis in tortor pretium hendrerit sed. Vel et nibh sodales blandit egestas a quis bibendum.</p>
             </div>
-        </div>
-        <div class="flex flex-col gap-2">
-            <span class="text-base-gray-300 text-sm">Hoje</span>
-            <div class="bg-base-gray-700 rounded-lg p-6 flex flex-col gap-6">
-                <div class="flex gap-6">
-                    <img class="w-[98px] h-[134px] rounded" src="images/books/o-hobbit.png" alt="O Hobbit">
-                    <div class="flex flex-col justify-between">
-                        <div>
-                            <h2 class="text-lg font-bold text-base-gray-100">O Hobbit</h2>
-                            <h3 class="text-sm text-base-gray-400">Junji Ito</h3>
+            <div class="flex flex-col gap-2">
+                <span class="text-base-gray-300 text-sm">Hoje</span>
+                <div class="bg-base-gray-700 rounded-lg p-6 flex flex-col gap-6">
+                    <div class="flex gap-6">
+                        <img class="w-[98px] h-[134px] rounded" src="images/books/o-hobbit.png" alt="O Hobbit">
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <h2 class="text-lg font-bold text-base-gray-100">O Hobbit</h2>
+                                <h3 class="text-sm text-base-gray-400">Junji Ito</h3>
+                            </div>
+                            <x-rating-stars rate="4" />
                         </div>
-                        <x-rating-stars rate="4" />
                     </div>
+                    <p class="text-base-gray-300 text-sm">Ornare amet scelerisque eget sit in donec dui. Tempus eget porttitor hendrerit eros viverra. Sit eget ipsum purus morbi curabitur cras gravida adipiscing dictum. Dui duis ut auctor dolor et mattis ultrices. Convallis quis in tortor pretium hendrerit sed. Vel et nibh sodales blandit egestas a quis bibendum.</p>
                 </div>
-                <p class="text-base-gray-300 text-sm">Ornare amet scelerisque eget sit in donec dui. Tempus eget porttitor hendrerit eros viverra. Sit eget ipsum purus morbi curabitur cras gravida adipiscing dictum. Dui duis ut auctor dolor et mattis ultrices. Convallis quis in tortor pretium hendrerit sed. Vel et nibh sodales blandit egestas a quis bibendum.</p>
             </div>
         </div>
     </div>

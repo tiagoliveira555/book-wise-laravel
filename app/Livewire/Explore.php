@@ -57,7 +57,9 @@ class Explore extends Component
     {
         Carbon::setLocale('pt_BR');
 
-        return Carbon::parse($date)->diffForHumans();
+        $humanDate = Carbon::parse($date)->diffForHumans();
+
+        return ucfirst($humanDate);
     }
 
     public function toggleArea()
