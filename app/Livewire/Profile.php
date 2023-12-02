@@ -18,10 +18,10 @@ class Profile extends Component
     {
         $user = User::find($this->id);
 
-        if ($user) {
-            $this->user = $user;
-        } elseif (auth()->check()) {
+        if (auth()->check() && $this->id === '') {
             $this->user = auth()->user();
+        } elseif (auth()->check() && $user) {
+            $this->user = $user;
         } else {
             $this->redirect('/', navigate: true);
         }
