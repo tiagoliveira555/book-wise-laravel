@@ -11,34 +11,28 @@
             </div>
         </header>
         <div class="flex flex-col h-[715px] rounded pb-10 gap-6 overflow-auto scrollbar-hide">
-            <div class="flex flex-col gap-2">
-                <span class="text-base-gray-300 text-sm">Hoje</span>
-                <div class="bg-base-gray-700 rounded-lg p-6 flex flex-col gap-6">
-                    <div class="flex gap-6">
-                        <img class="w-[98px] h-[134px] rounded" src="images/books/o-hobbit.png" alt="O Hobbit">
-                        <div class="flex flex-col justify-between">
-                            <div>
-                                <h2 class="text-lg font-bold text-base-gray-100">O Hobbit</h2>
-                                <h3 class="text-sm text-base-gray-400">Junji Ito</h3>
-                            </div>
-                            <x-rating-stars rate="4" />
-                        </div>
-                    </div>
-                    <p class="text-base-gray-300 text-sm">Ornare amet scelerisque eget sit in donec dui. Tempus eget porttitor hendrerit eros viverra. Sit eget ipsum purus morbi curabitur cras gravida adipiscing dictum. Dui duis ut auctor dolor et mattis ultrices. Convallis quis in tortor pretium hendrerit sed. Vel et nibh sodales blandit egestas a quis bibendum.</p>
-                </div>
-            </div>
+
+
+        @if ($this->user)
+            @foreach ($user->ratings->sortByDesc('created_at') as $rating)
+                <x-card-profile-rating :$rating />
+            @endforeach
+        @endif
         </div>
     </div>
+
+
+    @if($this->user)
     <div class="w-[308px] mt-[126px] flex flex-col items-center gap-8">
         <div class="flex flex-col items-center gap-5">
             <div class="h-[72px] w-[72px] flex justify-center items-center bg-gradient-vertical rounded-full">
                 <img class="rounded-full w-[68px] h-[68px]"
-                src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
-                alt="name"
+                src="{{ $user->avatar_url }}"
+                alt="{{ $user->name }}"
             >
             </div>
             <div class="flex flex-col items-center">
-                <h2 class="text-base-gray-100 text-xl font-bold">Cristofer Rosser</h2>
+                <h2 class="text-base-gray-100 text-xl font-bold">{{ $user->name }}</h2>
                 <h3 class="text-base-gray-400 text-sm">membro desde 2019</h3>
             </div>
         </div>
@@ -84,4 +78,5 @@
             </div>
         </div>
     </div>
+    @endif
 </div>
