@@ -1,10 +1,10 @@
 <div class="flex">
     <div class="w-[624px] ml-24 mr-16">
         <header class="mt-[52px] mb-10 flex flex-col gap-10">
-            @if (auth()->check() && $this->user)
+            @if ($this->user)
             <div class="w-36 flex items-center gap-3">
 
-                @if (auth()->user()->id === $this->user->id)
+                @if (auth()->check() && auth()->user()->id === $this->user->id)
                     <i class="text-3xl text-base-green-100 ph ph-user"></i>
                     <h2 class="text-base-gray-100 text-2xl font-bold">Perfil</h2>
                 @else

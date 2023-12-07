@@ -20,7 +20,7 @@ class Profile extends Component
 
         if (auth()->check() && $this->id === '') {
             $this->user = auth()->user();
-        } elseif (auth()->check() && $user) {
+        } elseif (auth()->check() && $user || !auth()->check() && $user) {
             $this->user = $user;
         } else {
             $this->redirect('/', navigate: true);
