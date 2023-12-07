@@ -1,6 +1,6 @@
-<div class="flex">
+<div class="flex max-[1280px]:flex-col-reverse max-[1280px]:items-center">
     <div class="w-[624px] ml-24 mr-16">
-        <header class="mt-[52px] mb-10 flex flex-col gap-10">
+        <header class="mt-[52px] max-[1280px]:mt-0 mb-10 flex flex-col gap-10">
             @if ($this->user)
             <div class="w-36 flex items-center gap-3">
 
@@ -24,7 +24,7 @@
                 <i class="text-xl text-base-gray-500 ph ph-magnifying-glass peer-focus:text-base-green-200"></i>
             </div>
         </header>
-        <div class="flex flex-col h-[715px] rounded pb-10 gap-6 overflow-auto scrollbar-hide">
+        <div class="flex flex-col h-[715px] max-[1280px]:w-full rounded pb-10 gap-6 overflow-auto scrollbar-hide">
 
 
         @if ($this->user)
@@ -38,7 +38,7 @@
 
 
     @if($this->user)
-    <div class="w-[308px] mt-[126px] flex flex-col items-center gap-8">
+    <div class="w-[308px] mt-[126px] flex flex-col items-center gap-8 max-[1280px]:mt-5">
         <div class="flex flex-col items-center gap-5">
             <div class="h-[72px] w-[72px] flex justify-center items-center bg-gradient-vertical rounded-full">
                 <img class="rounded-full w-[68px] h-[68px]"
@@ -54,7 +54,7 @@
         <div class="py-2">
             <hr class="h-1 w-8 bg-gradient-horizontal rounded-full">
         </div>
-        <div class="pb-5 px-14 flex flex-col gap-8">
+        <div class="pb-5 px-14 flex flex-col gap-8 max-[1280px]:hidden">
             <div class="flex gap-5">
                 <div class="text-[32px] text-base-green-100">
                     <i class="ph ph-book-open"></i>

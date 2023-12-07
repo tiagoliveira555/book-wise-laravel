@@ -1,4 +1,4 @@
-<div class="w-[996px] h-[930px] rounded ml-24 mr-[76px]">
+<div class="w-[996px] h-[930px] rounded ml-24 mr-[76px] max-[1024px]:ml-10  max-[1024px]:mr-10">
     <header class="mt-[52px] flex justify-between items-center">
         <div class="w-36 flex items-center gap-3">
             <i class="text-3xl text-base-green-100 ph ph-binoculars"></i>
@@ -10,7 +10,7 @@
         </div>
     </header>
     <div class="mt-10">
-        <ul class="flex items-center gap-3">
+        <ul class="flex flex-wrap items-center gap-3">
             <li class="py-1 px-4 rounded-full bg-base-purple-200 text-center text-base-gray-100 border border-transparent hover:border-base-purple-100 transition-all">Tudo</li>
             <li class="py-1 px-4 rounded-full text-center text-base-purple-100 border border-base-purple-100 hover:border-base-purple-100 transition-all">Computação</li>
             <li class="py-1 px-4 rounded-full text-center text-base-purple-100 border border-base-purple-100 hover:border-base-purple-100 transition-all">Educação</li>
@@ -24,7 +24,9 @@
 
     <main
         x-data="{ open: false }"
-        class="grid grid-cols-3 gap-5 mt-12 pb-10 overflow-auto scrollbar-hide h-[728px] rounded"
+        class="grid grid-cols-3
+        max-[1280px]:grid-cols-2 max-[1280px]:gap-6
+        max-[1024px]:grid-cols-1 gap-5 mt-12 pb-10 overflow-auto scrollbar-hide h-[728px] rounded"
     >
 
         @foreach ($books as $book)

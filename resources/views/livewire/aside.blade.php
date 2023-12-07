@@ -1,4 +1,4 @@
-<aside class="bg-sidebar-bg h-[912px] w-[232px] flex flex-col rounded-xl">
+<aside class="bg-sidebar-bg h-[912px] min-w-[232px] flex flex-col rounded-xl">
     <img class="mt-10 mx-[52px] opacity-90" src="images/logo-min.svg" alt="Logo">
     <div class="flex flex-col justify-between h-full">
         <div class="flex flex-col gap-4 ml-12 mt-16">
