@@ -21,11 +21,15 @@ class Explore extends Component
     public int $rate = 0;
 
     public string $search = '';
+    public string $filterCategory = '';
 
     public function render()
     {
         return view('livewire.explore', [
-            'books' => Book::query()->where('name', 'like', "%{$this->search}%")->get(),
+            'books' => Book::query()
+                            ->where('name', 'like', "%{$this->search}%")
+                            ->whereHas('categories', fn ($query) => $query->where('name', 'like', "%{$this->filterCategory}%"))
+                            ->get(),
         ]);
     }
 

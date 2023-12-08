@@ -10,23 +10,30 @@
         </div>
     </header>
     <div class="mt-10">
-        <ul class="flex flex-wrap items-center gap-3">
-            <li class="py-1 px-4 rounded-full bg-base-purple-200 text-center text-base-gray-100 border border-transparent hover:border-base-purple-100 transition-all">Tudo</li>
-            <li class="py-1 px-4 rounded-full text-center text-base-purple-100 border border-base-purple-100 hover:border-base-purple-100 transition-all">Computação</li>
-            <li class="py-1 px-4 rounded-full text-center text-base-purple-100 border border-base-purple-100 hover:border-base-purple-100 transition-all">Educação</li>
-            <li class="py-1 px-4 rounded-full text-center text-base-purple-100 border border-base-purple-100 hover:border-base-purple-100 transition-all">Fantasia</li>
-            <li class="py-1 px-4 rounded-full text-center text-base-purple-100 border border-base-purple-100 hover:border-base-purple-100 transition-all">Ficção científica</li>
-            <li class="py-1 px-4 rounded-full text-center text-base-purple-100 border border-base-purple-100 hover:border-base-purple-100 transition-all">Horror</li>
-            <li class="py-1 px-4 rounded-full text-center text-base-purple-100 border border-base-purple-100 hover:border-base-purple-100 transition-all">HQs</li>
-            <li class="py-1 px-4 rounded-full text-center text-base-purple-100 border border-base-purple-100 hover:border-base-purple-100 transition-all">Suspense</li>
-        </ul>
+        <div class="flex flex-wrap items-center gap-3">
+
+            <x-filter-book name="Tudo" />
+            <x-filter-book name="Programação" />
+            <x-filter-book name="Educação" />
+            <x-filter-book name="Ficção" />
+            <x-filter-book name="Aventura" />
+            <x-filter-book name="Geek" />
+            <x-filter-book name="Alegoria" />
+            <x-filter-book name="Fábula" />
+            <x-filter-book name="Romance" />
+            <x-filter-book name="Suspense" />
+            <x-filter-book name="Autoajuda" />
+            <x-filter-book name="Arquitetura" />
+            <x-filter-book name="Terror" />
+
+        </div>
     </div>
 
     <main
         x-data="{ open: false }"
         class="grid grid-cols-3
         max-[1280px]:grid-cols-2 max-[1280px]:gap-6
-        max-[1024px]:grid-cols-1 gap-5 mt-12 pb-10 overflow-auto scrollbar-hide max-h-[728px] rounded"
+        max-[1024px]:grid-cols-1 gap-5 mt-12 pb-10 overflow-auto scrollbar-hide max-h-[682px] rounded"
     >
 
         @foreach ($books as $book)
