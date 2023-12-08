@@ -42,4 +42,33 @@ class Profile extends Component
     {
         return Carbon::parse($date)->year;
     }
+
+    public function getCountReadingPage($user)
+    {
+        $count = 0;
+
+        foreach ($user->ratings as $rating) {
+            $count += $rating->book->total_pages;
+        }
+
+        return $count;
+    }
+
+    public function getCountAvaliabledBooks($user)
+    {
+        return count($user->ratings);
+    }
+
+    public function getMostCategory($user)
+    {
+        $categories = collect();
+
+        foreach ($user->ratings as $rating) {
+            foreach ($rating->book->categories as $category) {
+                $categories->push($category->name);
+            }
+        }
+
+        return $categories->countBy(fn ($category) => $category)->sortDesc()->keys()->first() ?? 'Sem categorias';
+    }
 }

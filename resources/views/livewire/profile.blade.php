@@ -56,10 +56,10 @@
         </div>
         <div class="pb-5 px-14 flex flex-col gap-8 max-[1280px]:hidden">
 
-            <x-profile-description icon="book-open" content="3853" label="Páginas lidas" />
-            <x-profile-description icon="books" content="10" label="Livros avaliados" />
-            <x-profile-description icon="user-list" content="8" label="Autores lidos" />
-            <x-profile-description icon="bookmark-simple" content="Computação" label="Categoria mais lida" />
+            <x-profile-description icon="book-open" content="{{ $this->getCountReadingPage($user) }}" label="Páginas lidas" />
+            <x-profile-description icon="books" content="{{ $this->getCountAvaliabledBooks($user) }}" label="Livros avaliados" />
+            <x-profile-description icon="user-list" content="{{ $this->getCountAvaliabledBooks($user) }}" label="Autores lidos" />
+            <x-profile-description icon="bookmark-simple" content="{{ $this->getMostCategory($user) }}" label="Categoria mais lida" />
 
         </div>
     </div>
