@@ -20,10 +20,12 @@ class Explore extends Component
     #[Rule(['required', 'integer', 'between:1,5'])]
     public int $rate = 0;
 
+    public string $search = '';
+
     public function render()
     {
         return view('livewire.explore', [
-            'books' => Book::query()->get(),
+            'books' => Book::query()->where('name', 'like', "%{$this->search}%")->get(),
         ]);
     }
 

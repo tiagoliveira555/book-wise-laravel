@@ -28,9 +28,23 @@
 
 
         @if ($this->user)
-            @foreach ($user->ratings->sortByDesc('created_at') as $rating)
-                <x-card-profile-rating :$rating />
-            @endforeach
+            @if (count($this->user->ratings) !== 0)
+                @foreach ($user->ratings->sortByDesc('created_at') as $rating)
+                    <x-card-profile-rating :$rating />
+                @endforeach
+            @else
+                <p class="text-base-gray-100">
+                    Nenhum livro avaliado
+                    <a
+                        href="{{ route('explore') }}"
+                        wire:navigate
+                        class="font-bold underline"
+                    >
+                        clique aqui
+                    </a>
+                    e avalie.
+                </p>
+            @endif
         @endif
 
         </div>

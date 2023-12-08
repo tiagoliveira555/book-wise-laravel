@@ -5,7 +5,7 @@
             <h2 class="text-base-gray-100 text-2xl font-bold">Explorar</h2>
         </div>
         <div class="w-[433px] h-12 rounded py-[14px] px-5 border border-base-gray-500 focus-within:border-base-green-200 flex justify-between items-center transition-all">
-            <input class="flex-1 bg-transparent text-base-gray-200 text-sm outline-none border-none focus:ring-0 placeholder:text-base-gray-400 peer" type="text" placeholder="Buscar livro ou autor">
+            <input wire:model.live.debounce.500ms="search" class="flex-1 bg-transparent text-base-gray-200 text-sm outline-none border-none focus:ring-0 placeholder:text-base-gray-400 peer" type="text" placeholder="Buscar livro ou autor">
             <i class="text-xl text-base-gray-500 ph ph-magnifying-glass peer-focus:text-base-green-200"></i>
         </div>
     </header>
@@ -26,7 +26,7 @@
         x-data="{ open: false }"
         class="grid grid-cols-3
         max-[1280px]:grid-cols-2 max-[1280px]:gap-6
-        max-[1024px]:grid-cols-1 gap-5 mt-12 pb-10 overflow-auto scrollbar-hide h-[728px] rounded"
+        max-[1024px]:grid-cols-1 gap-5 mt-12 pb-10 overflow-auto scrollbar-hide max-h-[728px] rounded"
     >
 
         @foreach ($books as $book)
