@@ -20,7 +20,7 @@
             </div>
             @endif
             <div class="w-full h-12 rounded py-[14px] px-5 border border-base-gray-500 focus-within:border-base-green-200 flex justify-between items-center transition-all">
-                <input class="flex-1 bg-transparent text-base-gray-200 text-sm outline-none border-none focus:ring-0 placeholder:text-base-gray-400 peer" type="text" placeholder="Buscar livro avaliado">
+                <input wire:model.live.debounce.500ms="bookFilter" class="flex-1 bg-transparent text-base-gray-200 text-sm outline-none border-none focus:ring-0 placeholder:text-base-gray-400 peer" type="text" placeholder="Buscar livro avaliado">
                 <i class="text-xl text-base-gray-500 ph ph-magnifying-glass peer-focus:text-base-green-200"></i>
             </div>
         </header>
@@ -29,9 +29,13 @@
 
         @if ($this->user)
             @if (count($this->user->ratings) !== 0)
-                @foreach ($user->ratings->sortByDesc('created_at') as $rating)
+
+
+                @foreach ($this->searchBook($this->user) as $rating)
                     <x-card-profile-rating :$rating />
                 @endforeach
+
+
             @else
                 <p class="text-base-gray-100">
                     Nenhum livro avaliado

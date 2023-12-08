@@ -14,6 +14,8 @@ class Profile extends Component
 
     public ?User $user = null;
 
+    public string $bookFilter = '';
+
     public function render()
     {
         $user = User::find($this->id);
@@ -70,5 +72,17 @@ class Profile extends Component
         }
 
         return $categories->countBy(fn ($category) => $category)->sortDesc()->keys()->first() ?? 'Sem categorias';
+    }
+
+    public function searchBook($user)
+    {
+        $ratingsFilter = $user->ratings()
+        ->whereHas('book', function ($query) {
+            $query->where('name', 'like', "%{$this->bookFilter}%");
+        })
+        ->orderBy('created_at', 'desc')
+        ->get();
+
+        return $ratingsFilter;
     }
 }

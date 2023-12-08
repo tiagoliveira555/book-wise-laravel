@@ -21,6 +21,7 @@ class Explore extends Component
     public int $rate = 0;
 
     public string $search = '';
+
     public string $filterCategory = '';
 
     public function render()
