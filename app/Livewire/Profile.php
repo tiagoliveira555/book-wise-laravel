@@ -37,4 +37,9 @@ class Profile extends Component
 
         return ucfirst($humanDate);
     }
+
+    public function getYear($date)
+    {
+        return Carbon::parse($date)->year;
+    }
 }

@@ -48,49 +48,19 @@
             </div>
             <div class="flex flex-col items-center">
                 <h2 class="text-base-gray-100 text-xl font-bold">{{ $user->name }}</h2>
-                <h3 class="text-base-gray-400 text-sm">membro desde 2019</h3>
+                <h3 class="text-base-gray-400 text-sm">membro desde <span>{{ $this->getYear($user->created_at) }}</span></h3>
             </div>
         </div>
         <div class="py-2">
             <hr class="h-1 w-8 bg-gradient-horizontal rounded-full">
         </div>
         <div class="pb-5 px-14 flex flex-col gap-8 max-[1280px]:hidden">
-            <div class="flex gap-5">
-                <div class="text-[32px] text-base-green-100">
-                    <i class="ph ph-book-open"></i>
-                </div>
-                <div class="flex flex-col">
-                    <strong class="text-base-gray-200 font-bold">3853</strong>
-                    <span class="text-base-gray-300 text-sm">Páginas lidas</span>
-                </div>
-            </div>
-            <div class="flex gap-5">
-                <div class="text-[32px] text-base-green-100">
-                    <i class="ph ph-books"></i>
-                </div>
-                <div class="flex flex-col">
-                    <strong class="text-base-gray-200 font-bold">10</strong>
-                    <span class="text-base-gray-300 text-sm">Livros avaliados</span>
-                </div>
-            </div>
-            <div class="flex gap-5">
-                <div class="text-[32px] text-base-green-100">
-                    <i class="ph ph-user-list"></i>
-                </div>
-                <div class="flex flex-col">
-                    <strong class="text-base-gray-200 font-bold">8</strong>
-                    <span class="text-base-gray-300 text-sm">Autores lidos</span>
-                </div>
-            </div>
-            <div class="flex gap-5">
-                <div class="text-[32px] text-base-green-100">
-                    <i class="ph ph-bookmark-simple"></i>
-                </div>
-                <div class="flex flex-col">
-                    <strong class="text-base-gray-200 font-bold">Computação</strong>
-                    <span class="text-base-gray-300 text-sm">Categoria mais lida</span>
-                </div>
-            </div>
+
+            <x-profile-description icon="book-open" content="3853" label="Páginas lidas" />
+            <x-profile-description icon="books" content="10" label="Livros avaliados" />
+            <x-profile-description icon="user-list" content="8" label="Autores lidos" />
+            <x-profile-description icon="bookmark-simple" content="Computação" label="Categoria mais lida" />
+
         </div>
     </div>
     @endif
