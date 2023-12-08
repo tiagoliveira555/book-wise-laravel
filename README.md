@@ -3,7 +3,7 @@
 <h1 align="center">Book Wise Laravel</h1>
 
 <p align="center">
-  <a href="#-link">Link do Projeto ONLINE</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-link">Link do Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-executar">Como executar</a>&nbsp;&nbsp;&nbsp;
@@ -11,9 +11,9 @@
 
 <br>
 
-## Link do Projeto ONLINE
+## 🔗 Link do Projeto
 
-[LINK](https://bookwise.tiagodeveloper.tech)
+[Clique aqui](https://bookwise.tiagodeveloper.tech)
 
 ## ✨ Tecnologias
 
@@ -29,15 +29,15 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Um sistema para avaliar, filtrar e buscar livros. Permite aos usuários:
 
-. Avaliar livros.
-. Filtrar por categorias.
-. Buscar livros por título.
+- Avaliar livros.
+- Filtrar por categorias.
+- Buscar livros por título.
 
-### Funcionalidades
+Funcionalidades:
 
-. Login social de usuários através do Google e Github.
-. Explorar livros, avaliar e escrever descrições.
-. Filtros e busca eficientes.
+- Login social de usuários através do Google e Github.
+- Explorar livros, avaliar e escrever descrições.
+- Filtros e busca eficientes.
 
 ## 🚀 Como executar
 
