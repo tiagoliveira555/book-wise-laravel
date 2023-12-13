@@ -4,10 +4,11 @@ namespace App\Livewire;
 
 use App\Models\Book;
 use App\Models\Rating;
-use Carbon\Carbon;
 use Livewire\Attributes\Rule;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
+#[Title('Explore')]
 class Explore extends Component
 {
     public ?Book $book = null;
@@ -28,9 +29,9 @@ class Explore extends Component
     {
         return view('livewire.explore', [
             'books' => Book::query()
-                            ->where('name', 'like', "%{$this->search}%")
-                            ->whereHas('categories', fn ($query) => $query->where('name', 'like', "%{$this->filterCategory}%"))
-                            ->get(),
+                ->where('name', 'like', "%{$this->search}%")
+                ->whereHas('categories', fn ($query) => $query->where('name', 'like', "%{$this->filterCategory}%"))
+                ->get(),
         ]);
     }
 
@@ -60,29 +61,8 @@ class Explore extends Component
         return implode(', ', $categoryNames);
     }
 
-    public function convertDateForHumans(string $date): string
-    {
-        Carbon::setLocale('pt_BR');
-
-        $humanDate = Carbon::parse($date)->diffForHumans();
-
-        return ucfirst($humanDate);
-    }
-
     public function toggleArea()
     {
         $this->assessment = !$this->assessment;
-    }
-
-    public function ratingAverage($ratings)
-    {
-        $ratingsCount = count($ratings);
-        $ratingSum = 0;
-
-        foreach ($ratings as $rating) {
-            $ratingSum += $rating->rate;
-        }
-
-        return round($ratingSum / $ratingsCount);
     }
 }

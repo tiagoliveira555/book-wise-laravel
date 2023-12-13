@@ -16,7 +16,7 @@
             </a>
             <div>
                 <h2 class="text-base-gray-100 font-bold">{{ $rating->user->name }}</h2>
-                <h3 class="text-sm text-base-gray-400">{{ $this->convertDateForHumans($rating->created_at) }}</h3>
+                <h3 class="text-sm text-base-gray-400">{{ convertDateForHumans($rating->created_at) }}</h3>
             </div>
         </div>
 

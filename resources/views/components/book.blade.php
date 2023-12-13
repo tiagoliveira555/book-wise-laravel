@@ -15,6 +15,6 @@
             <h3 class="text-sm text-base-gray-400">{{ $book->author }}</h3>
         </div>
 
-        <x-rating-stars rate="{{ $this->ratingAverage($book->ratings) }}" />
+        <x-rating-stars rate="{{ ratingAverage($book->ratings) }}" />
     </div>
 </button>

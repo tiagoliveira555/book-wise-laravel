@@ -10,6 +10,6 @@
             <h3 class="text-sm text-base-gray-400">{{ $popularBook->author }}</h3>
         </div>
 
-        <x-rating-stars rate="{{ $this->ratingAverage($popularBook->ratings) }}" />
+        <x-rating-stars rate="{{ ratingAverage($popularBook->ratings) }}" />
     </div>
 </div>

@@ -24,7 +24,7 @@
                     </div>
                     <div class="flex gap-1 flex-col">
 
-                        <x-rating-stars rate="{{ $this->ratingAverage($this->book->ratings) }}" />
+                        <x-rating-stars rate="{{ ratingAverage($this->book->ratings) }}" />
 
                         <span class="text-sm text-base-gray-400">{{ count($this->book->ratings) }} avaliações</span>
                     </div>

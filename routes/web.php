@@ -20,10 +20,10 @@ Route::get('/auth/{driver}/callback', function ($driver) {
     $socialUser = Socialite::driver($driver)->stateless()->user();
 
     $user = User::query()->firstOrCreate(['email' => $socialUser->email], [
-            'name' => $socialUser->name,
-            'avatar_url' => $socialUser->avatar,
-            'password' => Hash::make(Random::generate(8)),
-        ]);
+        'name' => $socialUser->name,
+        'avatar_url' => $socialUser->avatar,
+        'password' => Hash::make(Random::generate(8)),
+    ]);
 
     Auth::login($user);
 

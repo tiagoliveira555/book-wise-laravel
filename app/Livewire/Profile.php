@@ -4,9 +4,11 @@ namespace App\Livewire;
 
 use App\Models\User;
 use Carbon\Carbon;
+use Livewire\Attributes\Title;
 use Livewire\Attributes\Url;
 use Livewire\Component;
 
+#[Title('Profile')]
 class Profile extends Component
 {
     #[Url()]
@@ -29,15 +31,6 @@ class Profile extends Component
         }
 
         return view('livewire.profile');
-    }
-
-    public function convertDateForHumans(string $date): string
-    {
-        Carbon::setLocale('pt_BR');
-
-        $humanDate = Carbon::parse($date)->diffForHumans();
-
-        return ucfirst($humanDate);
     }
 
     public function getYear($date)
@@ -77,11 +70,11 @@ class Profile extends Component
     public function searchBook($user)
     {
         $ratingsFilter = $user->ratings()
-        ->whereHas('book', function ($query) {
-            $query->where('name', 'like', "%{$this->bookFilter}%");
-        })
-        ->orderBy('created_at', 'desc')
-        ->get();
+            ->whereHas('book', function ($query) {
+                $query->where('name', 'like', "%{$this->bookFilter}%");
+            })
+            ->orderBy('created_at', 'desc')
+            ->get();
 
         return $ratingsFilter;
     }

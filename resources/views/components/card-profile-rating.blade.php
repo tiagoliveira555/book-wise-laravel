@@ -1,5 +1,5 @@
 <div class="flex flex-col gap-2">
-    <span class="text-base-gray-300 text-sm">{{ $this->convertDateForHumans($rating->created_at) }}</span>
+    <span class="text-base-gray-300 text-sm">{{ convertDateForHumans($rating->created_at) }}</span>
     <div class="bg-base-gray-700 rounded-lg p-6 flex flex-col gap-6 w-full break-words">
         <div class="flex gap-6">
             <img class="w-[98px] h-[134px] rounded" src="{{ $rating->book->cover_url }}" alt="{{ $rating->book->name }}">
