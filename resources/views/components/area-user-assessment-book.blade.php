@@ -7,7 +7,7 @@
             <span class="font-bold text-base-gray-100">{{ auth()->user()->name }}</span>
         </div>
 
-        <x-rating-stars isEditable="true" color="{{ $errors->has('rate') ? 'text-red-500' : 'text-base-purple-100' }}" />
+        <x-rating-stars isEditable="true" :color="$errors->has('rate') ? 'text-red-500' : 'text-base-purple-100'" />
 
     </header>
 

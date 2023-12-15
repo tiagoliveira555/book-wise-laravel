@@ -6,7 +6,7 @@
             </a>
             <div>
                 <h3 class="text-base-gray-100">{{ $rating->user->name }}</h3>
-                <h4 class="text-sm text-base-gray-400">{{ convertDateForHumans($rating->created_at) }}</h4>
+                <h4 class="text-sm text-base-gray-400">{{ $rating->created_at->diffForHumans() }}</h4>
             </div>
         </div>
 

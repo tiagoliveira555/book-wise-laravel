@@ -66,7 +66,7 @@
             </div>
             <div class="flex flex-col items-center">
                 <h2 class="text-base-gray-100 text-xl font-bold">{{ $user->name }}</h2>
-                <h3 class="text-base-gray-400 text-sm">membro desde <span>{{ $this->getYear($user->created_at) }}</span></h3>
+                <h3 class="text-base-gray-400 text-sm">membro desde <span>{{ $user->created_at->year }}</span></h3>
             </div>
         </div>
         <div class="py-2">
@@ -74,10 +74,10 @@
         </div>
         <div class="pb-5 px-14 flex flex-col gap-8 max-[1280px]:hidden">
 
-            <x-profile-description icon="book-open" content="{{ $this->getCountReadingPage($user) }}" label="Páginas lidas" />
-            <x-profile-description icon="books" content="{{ $this->getCountAvaliabledBooks($user) }}" label="Livros avaliados" />
-            <x-profile-description icon="user-list" content="{{ $this->getCountAvaliabledBooks($user) }}" label="Autores lidos" />
-            <x-profile-description icon="bookmark-simple" content="{{ $this->getMostCategory($user) }}" label="Categoria mais lida" />
+            <x-profile-description icon="book-open" :content="$this->getCountReadingPage($user)" label="Páginas lidas" />
+            <x-profile-description icon="books" :content="$this->getCountAvaliabledBooks($user)" label="Livros avaliados" />
+            <x-profile-description icon="user-list" :content="$this->getCountAvaliabledBooks($user)" label="Autores lidos" />
+            <x-profile-description icon="bookmark-simple" :content="$this->getMostCategory($user)" label="Categoria mais lida" />
 
         </div>
     </div>

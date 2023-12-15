@@ -3,7 +3,6 @@
 namespace App\Livewire;
 
 use App\Models\User;
-use Carbon\Carbon;
 use Livewire\Attributes\Title;
 use Livewire\Attributes\Url;
 use Livewire\Component;
@@ -31,11 +30,6 @@ class Profile extends Component
         }
 
         return view('livewire.profile');
-    }
-
-    public function getYear($date)
-    {
-        return Carbon::parse($date)->year;
     }
 
     public function getCountReadingPage($user)

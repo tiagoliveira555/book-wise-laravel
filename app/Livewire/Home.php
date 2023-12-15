@@ -42,7 +42,7 @@ class Home extends Component
             if ($rating) {
                 $returnData = [
                     'rate' => $rating->rate,
-                    'rating_date' => convertDateForHumans($rating->created_at),
+                    'rating_date' => $rating->created_at->diffForHumans(),
                     'book' => Book::query()->find($rating->book_id, ['id', 'name', 'author', 'summary', 'cover_url']),
                 ];
             }

@@ -1,16 +1,5 @@
 <?php
 
-use Carbon\Carbon;
-
-function convertDateForHumans(string $date): string
-{
-    Carbon::setLocale('pt_BR');
-
-    $humanDate = Carbon::parse($date)->diffForHumans();
-
-    return ucfirst($humanDate);
-}
-
 function ratingAverage($ratings)
 {
     $ratingsCount = count($ratings);
