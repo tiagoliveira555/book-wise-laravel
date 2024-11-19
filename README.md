@@ -13,7 +13,7 @@
 
 ## 🔗 Link do Projeto
 
-[Clique aqui](https://bookwise.tiagodeveloper.tech)
+[Clique aqui](https://152.67.41.151/)
 
 ## ✨ Tecnologias
 
